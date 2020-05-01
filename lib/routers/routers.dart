@@ -15,8 +15,6 @@ class Routes {
   static String search = "/search";
   // leaderboard
   static String leaderboard = "/leaderboard";
-  // category
-  static String category = "/category";
   // aboutUs
   static String aboutUs = "/aboutUs";
   // splash
@@ -33,7 +31,6 @@ class Routes {
     router.define(register, handler: registerRouterHandler);
     router.define(search, handler: searchRouterHandler);
     router.define(leaderboard, handler: leaderboardRouterHandler);
-    router.define(category, handler: categoryRouterHandler);
     router.define(aboutUs, handler: aboutUsRouterHandler);
     router.define(splash, handler: splashRouterHandler);
     // router.define(demoSimpleFixedTrans,

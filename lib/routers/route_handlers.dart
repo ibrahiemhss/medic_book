@@ -4,7 +4,6 @@ import 'package:medic_book/containers/Login.dart';
 import 'package:medic_book/containers/Register.dart';
 import 'package:medic_book/containers/Search.dart';
 import 'package:medic_book/containers/Leaderboard.dart';
-import 'package:medic_book/containers/Category.dart';
 import 'package:medic_book/containers/AboutUs.dart';
 import 'package:medic_book/containers/SplashPage.dart';
 
@@ -47,11 +46,6 @@ Handler searchRouterHandler = Handler(
 Handler leaderboardRouterHandler = Handler(
     handlerFunc: (BuildContext context, Map<String, List<String>> params) {
   return Leaderboard();
-});
-// category
-Handler categoryRouterHandler = Handler(
-    handlerFunc: (BuildContext context, Map<String, List<String>> params) {
-  return Category();
 });
 
 // about us
