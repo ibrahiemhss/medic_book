@@ -55,6 +55,7 @@ class AppLocalizations {
   String get search_txt {
     return Intl.message('Search', name: 'search_txt');
   }
+
   String get name_txt {
     return Intl.message('Name', name: 'name_txt');
   }
@@ -76,15 +77,19 @@ class AppLocalizations {
   String get confirm_txt {
     return Intl.message('Confirm', name: 'confirm_txt');
   }
+
   String get ignore_txt {
     return Intl.message('Ignore', name: 'ignore_txt');
   }
+
   String get follow_us_on_txt {
     return Intl.message('Follow us on', name: 'follow_us_on_txt');
   }
+
   String get facebook_txt {
     return Intl.message('FACEBOOK', name: 'facebook_txt');
   }
+
   String get instagram_txt {
     return Intl.message('INSTAGRAM', name: 'instagram_txt');
   }
@@ -104,9 +109,11 @@ class AppLocalizations {
   String get city_txt {
     return Intl.message('City', name: 'city_txt');
   }
+
   String get city_end_two_points_txt {
     return Intl.message('City :', name: 'city_end_two_points_txt');
   }
+
   String get phone_txt {
     return Intl.message('Phone', name: 'phone_txt');
   }
@@ -114,10 +121,11 @@ class AppLocalizations {
   String get chat_txt {
     return Intl.message('Chat', name: 'chat_txt');
   }
+
   String get chats_txt {
-    return Intl.message('Chats',
-        name: 'chats_txt');
+    return Intl.message('Chats', name: 'chats_txt');
   }
+
   String get warning_login_or_register_txt {
     return Intl.message('Please Log in or Register',
         name: 'warning_login_or_register_txt');
@@ -173,10 +181,12 @@ class AppLocalizations {
     return Intl.message('Type the phone number here in English',
         name: 'hint_phone_txt');
   }
+
   String get dr_hint_phone_txt {
     return Intl.message('The personal phone number is not shown to users',
         name: 'dr_hint_phone_txt');
   }
+
   String get add_appointment_txt {
     return Intl.message('Add appointment', name: 'add_appointment_txt');
   }
@@ -345,9 +355,11 @@ class AppLocalizations {
   String get provinces_txt {
     return Intl.message("Provinces", name: 'provinces_txt');
   }
+
   String get province_txt {
     return Intl.message("Province", name: 'province_txt');
   }
+
   String get male_txt {
     return Intl.message("Male", name: 'male_txt');
   }
@@ -401,7 +413,6 @@ class AppLocalizations {
     return Intl.message("Medical checking price(in Iraqi dinar)",
         name: 'medical_checking_price_in_iraq_dinar_txt');
   }
-
 
   String get clinic_name_txt {
     return Intl.message("Clinic name", name: 'clinic_name_txt');
@@ -500,9 +511,11 @@ class AppLocalizations {
   String get contact_us_etxt {
     return Intl.message('Contact us', name: 'contact_us_etxt');
   }
+
   String get contact_etxt {
     return Intl.message('Contact', name: 'contact_etxt');
   }
+
   String get enter_name_etxt {
     return Intl.message('Enter the Triple Name', name: 'enter_name_etxt');
   }
@@ -511,6 +524,7 @@ class AppLocalizations {
     return Intl.message('Please check your phone for the verification code.',
         name: 'check_phone_msg_code_etxt');
   }
+
   String get re_enter_pass_etxt {
     return Intl.message('Re-enter password', name: 're_enter_pass_etxt');
   }
@@ -603,6 +617,7 @@ class AppLocalizations {
     return Intl.message("Please add Pharmacy name",
         name: 'add_the_pharmacy_name_txt');
   }
+
   String get no_new_appointments_yet_txt {
     return Intl.message("There are no new appointments yet",
         name: 'no_new_appointments_yet_txt');
@@ -730,7 +745,8 @@ class AppLocalizations {
   }
 
   String get warning_edit_birthdate_less20_txt {
-    return Intl.message('The birthdate cannot be modified for less than twenty years',
+    return Intl.message(
+        'The birthdate cannot be modified for less than twenty years',
         name: 'warning_edit_birthdate_less20_txt');
   }
 
@@ -921,15 +937,19 @@ class AppLocalizations {
   String get italy_txt {
     return Intl.message("Italy", name: 'italy_txt');
   }
+
   String get english_txt {
     return Intl.message("English", name: 'english_txt');
   }
+
   String get kurdish_txt {
     return Intl.message("Kurdish", name: 'kurdish_txt');
   }
+
   String get russian_txt {
     return Intl.message("Russian", name: 'russian_txt');
   }
+
 //************************//Delete Account Dialog//*****************************
   String get confirm_delete_txt {
     return Intl.message("Confirm delete", name: 'confirm_delete_txt');
@@ -1066,9 +1086,11 @@ class AppLocalizations {
   String get full_name_end_two_points_txt {
     return Intl.message('Full name :', name: "full_name_end_two_points_txt");
   }
+
   String get name_end_two_points_txt {
     return Intl.message('Name :', name: "name_end_two_points_txt");
   }
+
   String get birthdate_end_two_points_txt {
     return Intl.message('Birthdate :', name: "birthdate_end_two_points_txt");
   }
@@ -1108,6 +1130,7 @@ class AppLocalizations {
   String get save_txt {
     return Intl.message("Save", name: 'save_txt');
   }
+
   String get personal_info_txt {
     return Intl.message("Personal info", name: 'personal_info_txt');
   }
@@ -1359,6 +1382,7 @@ class AppLocalizations {
   String get medical_services_txt {
     return Intl.message('Medical services', name: 'medical_services_txt');
   }
+
   String get IQD_txt {
     return Intl.message('IQD', name: 'IQD_txt');
   }
@@ -1559,19 +1583,27 @@ class AppLocalizations {
   String get show_on_map_txt {
     return Intl.message('Show on the map', name: 'show_on_map_txt');
   }
+
   String get my_location_txt {
     return Intl.message('My location', name: 'my_location_txt');
   }
+
   String get workplace_txt {
     return Intl.message('Workplace', name: 'workplace_txt');
   }
 
   String get warning_allow_get_image_txt {
-    return Intl.message('warning_allow_get_image_txt', name: 'To be able to send pictures please allow the application to use the image library, go to the settings below so that you can do that');
+    return Intl.message('warning_allow_get_image_txt',
+        name:
+            'To be able to send pictures please allow the application to use the image library, go to the settings below so that you can do that');
   }
+
   String get warning_allow_locate_txt {
-    return Intl.message("Hijozaty requires access to your location  To facilitate access to application services on the map to enable the addition of home and work addresses and to determine the closest services provided", name: 'warning_allow_locate_txt');
+    return Intl.message(
+        "Hijozaty requires access to your location  To facilitate access to application services on the map to enable the addition of home and work addresses and to determine the closest services provided",
+        name: 'warning_allow_locate_txt');
   }
+
   //----------------------------------------------------------------------------
   //-----------------------//appointment screen//-------------------------------
   //----------------------------------------------------------------------------
@@ -1784,9 +1816,9 @@ class AppLocalizations {
     return Intl.message('Will be activated soon',
         name: "will_activated_soon_txt");
   }
+
   String get hospitals_txt {
-    return Intl.message('Hospitals',
-        name: "hospitals_txt");
+    return Intl.message('Hospitals', name: "hospitals_txt");
   }
 
   //----------------------------------------------------------------------------
@@ -1889,6 +1921,7 @@ class AppLocalizations {
     return Intl.message('Allowed to evaluate the appointment once',
         name: 'allowed_to_evaluate_the_appointment_once_txt');
   }
+
   String get evaluation_successful_done_txt {
     return Intl.message('Evaluation successful done',
         name: 'evaluation_successful_done_txt');
@@ -1902,183 +1935,195 @@ class AppLocalizations {
   //############################################################################
   //############################################################################
   String get new_appointments_txt {
-    return Intl.message('New Appointments',
-        name: 'new_appointments_txt');
+    return Intl.message('New Appointments', name: 'new_appointments_txt');
   }
+
   String get reviews_txt {
-    return Intl.message('Reviews',
-        name: 'reviews_txt');
+    return Intl.message('Reviews', name: 'reviews_txt');
   }
+
   String get medical_advices_txt {
-    return Intl.message('Medical Advices',
-        name: 'medical_advices_txt');
+    return Intl.message('Medical Advices', name: 'medical_advices_txt');
   }
+
   String get doctor_info_txt {
-    return Intl.message('Doctor info',
-        name: 'doctor_info_txt');
+    return Intl.message('Doctor info', name: 'doctor_info_txt');
   }
+
   String get experiences_txt {
-    return Intl.message('Experiences',
-        name: 'experiences_txt');
+    return Intl.message('Experiences', name: 'experiences_txt');
   }
+
   String get enable_chat_txt {
-    return Intl.message('Enable chat',
-        name: 'enable_chat_txt');
+    return Intl.message('Enable chat', name: 'enable_chat_txt');
   }
+
   String get on_txt {
-    return Intl.message('On',
-        name: 'on_txt');
+    return Intl.message('On', name: 'on_txt');
   }
+
   String get off_txt {
-    return Intl.message('Off',
-        name: 'off_txt');
+    return Intl.message('Off', name: 'off_txt');
   }
+
   String get click_to_cycle_between_weeks_txt {
     return Intl.message('Click to cycle between weeks',
         name: 'click_to_cycle_between_weeks_txt');
   }
+
   String get holiday_txt {
-    return Intl.message('Holiday',
-        name: 'holiday_txt');
+    return Intl.message('Holiday', name: 'holiday_txt');
   }
+
   String get this_holiday_txt {
-    return Intl.message('this holiday',
-        name: 'this_holiday_txt');
+    return Intl.message('this holiday', name: 'this_holiday_txt');
   }
+
   String get appointment_number_txt {
-    return Intl.message('Appointment number',
-        name: 'appointment_number_txt');
+    return Intl.message('Appointment number', name: 'appointment_number_txt');
   }
+
   String get see_more_txt {
-    return Intl.message('See more',
-        name: 'see_more_txt');
+    return Intl.message('See more', name: 'see_more_txt');
   }
+
   String get set_new_time_txt {
-    return Intl.message('Set a new time',
-        name: 'set_new_time_txt');
+    return Intl.message('Set a new time', name: 'set_new_time_txt');
   }
+
   String get no_notes_found_txt {
-    return Intl.message('No notes found',
-        name: 'no_notes_found_txt');
+    return Intl.message('No notes found', name: 'no_notes_found_txt');
   }
 
   String get warning_accept_appointment_txt {
     return Intl.message('Do you want to accept this appointment?',
         name: 'warning_accept_appointment_txt');
   }
+
   String get has_been_approved_txt {
-    return Intl.message('Has been approved',
-        name: 'has_been_approved_txt');
+    return Intl.message('Has been approved', name: 'has_been_approved_txt');
   }
+
   String get reschedule_txt {
-    return Intl.message('Reschedule',
-        name: 'reschedule_txt');
+    return Intl.message('Reschedule', name: 'reschedule_txt');
   }
+
   String get reschedule_this_appointment_txt {
     return Intl.message('Reschedule this appointment',
         name: 'reschedule_this_appointment_txt');
   }
-  String get  warning_transfer_appointment_to_review_txt {
-    return Intl.message('Do you want to transfer this appointment to the review?',
+
+  String get warning_transfer_appointment_to_review_txt {
+    return Intl.message(
+        'Do you want to transfer this appointment to the review?',
         name: 'do_you_want_to_transfer_appointment_to_review_txt');
   }
+
   String get under_revision_txt {
-    return Intl.message('Under revision',
-        name: 'under_revision_txt');
+    return Intl.message('Under revision', name: 'under_revision_txt');
   }
+
   String get change_as_completed_txt {
-    return Intl.message('Change as completed',
-        name: 'under_revision_txt');
+    return Intl.message('Change as completed', name: 'under_revision_txt');
   }
+
   String get warning_appointment_set_as_completed_txt {
     return Intl.message('This appointment has been set as completed',
         name: 'warning_appointment_set_as_completed_txt');
   }
+
   String get completed_txt {
-    return Intl.message('Completed',
-        name: 'comleted_txt');
+    return Intl.message('Completed', name: 'comleted_txt');
   }
+
   String get warning_set_appointment_to_be_completed_txt {
-    return Intl.message('Do you want to set this appointment as to be completed?',
+    return Intl.message(
+        'Do you want to set this appointment as to be completed?',
         name: 'warning_set_appointment_to_be_completed_txt');
   }
+
   String get warning_delete_appointment_txt {
-    return Intl.message('Do you want to permanently delete this appointment (the appointment cannot be returned if it was deleted)?',
+    return Intl.message(
+        'Do you want to permanently delete this appointment (the appointment cannot be returned if it was deleted)?',
         name: 'warning_delete_appointment_txt');
   }
+
   String get there_are_no_later_appointments_txt {
     return Intl.message('There are no later appointments',
         name: 'there_are_no_later_appointments_txt');
   }
+
   String get warning_reschedule_appointment_txt {
     return Intl.message('Do you want to reschedule this appointment?',
         name: 'warning_reschedule_appointment_txt');
   }
+
   String get appointment_has_been_moved_to_the_Reviews_txt {
     return Intl.message('The appointment has been moved to the Reviews section',
         name: 'appointment_has_been_moved_to_the_Reviews_txt');
   }
+
   String get warning_transfer_appointment_to_the_review_txt {
-    return Intl.message('Do you want to transfer the appointment to the review?',
+    return Intl.message(
+        'Do you want to transfer the appointment to the review?',
         name: 'warning_transfer_appointment_to_the_review_txt');
   }
+
   String get discard_txt {
-    return Intl.message('Discard',
-        name: 'discard_txt');
+    return Intl.message('Discard', name: 'discard_txt');
   }
 
   String get accepted_txt {
-    return Intl.message('Accepted',
-        name: 'accepted_txt');
+    return Intl.message('Accepted', name: 'accepted_txt');
   }
+
   String get accept_txt {
-    return Intl.message('Accept',
-        name: 'accept_txt');
+    return Intl.message('Accept', name: 'accept_txt');
   }
 
   //----------------------------------------------------------------------------
   //---------------------//List phonebook item//------------------------
   //----------------------------------------------------------------------------
   String get views_txt {
-    return Intl.message('Views',
-        name: 'views_txt');
+    return Intl.message('Views', name: 'views_txt');
   }
+
   String get select_country_txt {
-    return Intl.message('Select country',
-        name: 'select_country_txt');
+    return Intl.message('Select country', name: 'select_country_txt');
   }
 
   String get all_countries_txt {
-    return Intl.message('All countries',
-        name: 'all_countries_txt');
+    return Intl.message('All countries', name: 'all_countries_txt');
   }
+
   String get clinics_phonebook_txt {
-    return Intl.message('Clinics Phonebook',
-        name: 'clinics_phonebook_txt');
+    return Intl.message('Clinics Phonebook', name: 'clinics_phonebook_txt');
   }
+
   String get search_in_clinics_phonebooks_txt {
     return Intl.message("Search in clinics phonebook",
         name: 'search_in_clinics_phonebooks_txt');
   }
+
   String get doctor_details_txt {
-    return Intl.message('Doctor details',
-        name: 'doctor_details_txt');
+    return Intl.message('Doctor details', name: 'doctor_details_txt');
   }
+
   String get description_txt {
-    return Intl.message('Description',
-        name: 'description_txt');
+    return Intl.message('Description', name: 'description_txt');
   }
+
   String get additional_specialization_txt {
     return Intl.message('Additional specialization',
         name: 'additional_specialization_txt');
   }
+
   String get qualifications_txt {
-    return Intl.message('Qualifications',
-        name: 'qualifications_txt');
+    return Intl.message('Qualifications', name: 'qualifications_txt');
   }
+
   String get mobile_txt {
-    return Intl.message('Mobile',
-        name: 'mobile_txt');
+    return Intl.message('Mobile', name: 'mobile_txt');
   }
 
   //############################################################################
@@ -2091,9 +2136,11 @@ class AppLocalizations {
   String get pharmacist_info_txt {
     return Intl.message('Pharmacist info', name: 'pharmacist_info_txt');
   }
+
   String get pharmacist_details_txt {
     return Intl.message('Pharmacist details', name: 'pharmacist_details_txt');
   }
+
   //############################################################################
   //############################################################################
   //############################################################################
@@ -2102,22 +2149,23 @@ class AppLocalizations {
   //############################################################################
   //############################################################################
   String get medical_assistant_info_txt {
-    return Intl.message('Medical assistant info', name: 'medical_assistant_info_txt');
-  }
-  String get medical_assistant_details_txt {
-    return Intl.message('Medical assistant details', name: 'medical_assistant_details_txt');
+    return Intl.message('Medical assistant info',
+        name: 'medical_assistant_info_txt');
   }
 
+  String get medical_assistant_details_txt {
+    return Intl.message('Medical assistant details',
+        name: 'medical_assistant_details_txt');
+  }
 
   String get demo_txt {
-    return Intl.message('demo',
-        name: 'demo_txt');
+    return Intl.message('demo', name: 'demo_txt');
   }
+
   String get sent_chat_msg_txt {
     return Intl.message('An alert has been sent that there a new message',
         name: 'sent_chat_msg_txt');
   }
-
 }
 
 //----------------------------------------------------------------------------

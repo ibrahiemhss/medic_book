@@ -12,8 +12,7 @@ import 'package:medic_book/stores/loginStore.dart';
 import 'package:medic_book/stores/homeStore.dart';
 import 'package:medic_book/injection_container.dart' as di;
 
-void main() async{
-
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   //initialize get injection
   await di.init();

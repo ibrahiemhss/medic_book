@@ -1,12 +1,13 @@
-
 import 'dart:convert';
 
 import 'package:floor/floor.dart';
 import 'package:medic_book/model/patients.dart';
 
-PatientInfo patientInfoFromJson(String str) => PatientInfo.fromJson(json.decode(str));
+PatientInfo patientInfoFromJson(String str) =>
+    PatientInfo.fromJson(json.decode(str));
 
 String patientInfoToJson(PatientInfo data) => json.encode(data.toJson());
+
 @Entity(
   tableName: 'PatientInfo',
   foreignKeys: [
@@ -47,40 +48,41 @@ class PatientInfo {
   });
 
   factory PatientInfo.fromJson(Map<String, dynamic> json) => PatientInfo(
-    id: json["id"],
-    patientId: json["patient_id"],
-    bloodGroup: json["blood_group"],
-    maritalStatus: json["marital_status"],
-    address: json["address"],
-    chronicDisease: json["chronic_disease"],
-    surgeryRecord: json["surgery_record"],
-    socialRecord: json["social_record"],
-    familyRecord: json["family_record"],
-    drugSensitivity: json["drug_sensitivity"],
-    updatedBy: json["updated_by"],
-  );
+        id: json["id"],
+        patientId: json["patient_id"],
+        bloodGroup: json["blood_group"],
+        maritalStatus: json["marital_status"],
+        address: json["address"],
+        chronicDisease: json["chronic_disease"],
+        surgeryRecord: json["surgery_record"],
+        socialRecord: json["social_record"],
+        familyRecord: json["family_record"],
+        drugSensitivity: json["drug_sensitivity"],
+        updatedBy: json["updated_by"],
+      );
 
   Map<String, dynamic> toJson() => {
-    "id": id,
-    "patient_id": patientId,
-    "blood_group": bloodGroup,
-    "marital_status": maritalStatus,
-    "address": address,
-    "chronic_disease": chronicDisease,
-    "surgery_record": surgeryRecord,
-    "social_record": socialRecord,
-    "family_record": familyRecord,
-    "drug_sensitivity": drugSensitivity,
-    "updated_by": updatedBy,
-  };
+        "id": id,
+        "patient_id": patientId,
+        "blood_group": bloodGroup,
+        "marital_status": maritalStatus,
+        "address": address,
+        "chronic_disease": chronicDisease,
+        "surgery_record": surgeryRecord,
+        "social_record": socialRecord,
+        "family_record": familyRecord,
+        "drug_sensitivity": drugSensitivity,
+        "updated_by": updatedBy,
+      };
 }
+
 @dao
 abstract class PatientInfoDao {
   @Query('SELECT * FROM PatientInfo')
   Future<List<PatientInfo>> findAllPatientInfo();
 
   @Query('SELECT * FROM PatientInfo WHERE id = :id')
-  Future<List<PatientInfo>>  findDataByValue(int value);
+  Future<List<PatientInfo>> findDataByValue(int value);
   @insert
   Future<List<int>> insertAllPatientInfo(List<PatientInfo> list);
   @insert

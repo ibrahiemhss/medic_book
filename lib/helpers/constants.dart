@@ -1,8 +1,7 @@
-
-class Urls{
+class Urls {
   static const baseURL = "https://www.hijozaty.com";
-
 }
+
 // Color constant
 class AppColors {
   static const int mainColor = 0xff0288D1;
@@ -25,17 +24,17 @@ class AppColors {
 
 //assetss values
 class MyAssets {
-static const String iconHome = 'assets/icon/icon_home.svg';
-static const String iconFind = 'assets/icon/icon_find.svg';
-static const String iconSearch ='assets/icon/icon_search.svg';
-static const String iconClassification ='assets/icon/icon_classification.svg';
-static const String iconMyself = 'assets/icon/icon_myself.svg';
-static const String iconSetting = 'assets/icon/icon_setting.svg';
-static const String iconShare = 'assets/icon/icon_share.svg';
-static const String iconTrophy = 'assets/icon/icon_trophy.svg';
-
-
+  static const String iconHome = 'assets/icon/icon_home.svg';
+  static const String iconFind = 'assets/icon/icon_find.svg';
+  static const String iconSearch = 'assets/icon/icon_search.svg';
+  static const String iconClassification =
+      'assets/icon/icon_classification.svg';
+  static const String iconMyself = 'assets/icon/icon_myself.svg';
+  static const String iconSetting = 'assets/icon/icon_setting.svg';
+  static const String iconShare = 'assets/icon/icon_share.svg';
+  static const String iconTrophy = 'assets/icon/icon_trophy.svg';
 }
+
 // Numeric constant
 class Constants {
   static const double bottomIconWidth = 22.0;
@@ -44,5 +43,4 @@ class Constants {
   // Page left and right margins
   static const double pageMarginSide = 24.0;
   static const double pageMarginUpDown = 24.0;
-
 }

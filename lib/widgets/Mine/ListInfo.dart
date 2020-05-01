@@ -10,11 +10,7 @@ class ListInfo extends StatelessWidget {
     {'title': 'title 2', 'tip': 'write'},
     {'title': 'title 3', 'tip': 'Top up'},
     {'title': 'title 4', 'subTitle': 'subTitle 4', 'tip': 'info'},
-    {
-      'title': 'title 5',
-      'subTitle': 'subTitle 5',
-      'tip': '2'
-    },
+    {'title': 'title 5', 'subTitle': 'subTitle 5', 'tip': '2'},
     {'title': 'title 6', 'subTitle': 'subTitle 6'},
   ];
 

@@ -1,4 +1,3 @@
-
 import 'package:data_connection_checker/data_connection_checker.dart';
 import 'package:dio/dio.dart' as dio;
 import 'package:flutter/services.dart';
@@ -12,7 +11,6 @@ import 'data/database/database.dart';
 import 'data/datasources/local/local_data_source.dart';
 import 'data/datasources/remote/remote_data_source.dart';
 
-
 final sl = GetIt.instance;
 
 Future<void> init() async {
@@ -24,21 +22,18 @@ Future<void> init() async {
   sl.registerLazySingleton(() => sharedPreferences);
 
   //init tools
-  AppDatabase appDatabase= await $FloorAppDatabase.databaseBuilder('medicBook.db').build();
+  AppDatabase appDatabase =
+      await $FloorAppDatabase.databaseBuilder('medicBook.db').build();
   sl.registerLazySingleton(() => appDatabase);
   // Data sources
   sl.registerLazySingleton<RemoteDataSource>(
     () => RemoteDataSourceImpl(
       httpClient: sl(),
       sharedPreferences: sl(),
-      myHttpRequest:  sl(),
+      myHttpRequest: sl(),
     ),
   );
   sl.registerLazySingleton<LocalDataSource>(
-        () => LocalDataSourceImpl(
-        sharedPreferences: sl(),
-        appDatabase:sl()),
+    () => LocalDataSourceImpl(sharedPreferences: sl(), appDatabase: sl()),
   );
-
-
 }

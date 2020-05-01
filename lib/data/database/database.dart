@@ -16,19 +16,23 @@ part 'database.changeG.dart'; // the generated code will be there
 
 @Database(version: 1, entities: [
   AppPref,
-    AppSettings,
-  Clinic,PatientInfo,Patients,
-  PatientsVisits,PrescriptionOptions,RememberMe,User])
+  AppSettings,
+  Clinic,
+  PatientInfo,
+  Patients,
+  PatientsVisits,
+  PrescriptionOptions,
+  RememberMe,
+  User
+])
 abstract class AppDatabase extends FloorDatabase {
-
   AppPrefDao get appPref;
   AppSettingsDao get appSettingsDoa;
   ClinicDao get clinicDao;
   PatientInfoDao get patientInfoDao;
-  PatientsDao  get patientsDao;
-  PatientsVisitsDao  get patientsVisitsDao;
-  PrescriptionOptionsDao  get prescriptionOptionsDao;
-  RememberMeDao  get rememberMeDao;
-  UserDao  get userDao;
-
+  PatientsDao get patientsDao;
+  PatientsVisitsDao get patientsVisitsDao;
+  PrescriptionOptionsDao get prescriptionOptionsDao;
+  RememberMeDao get rememberMeDao;
+  UserDao get userDao;
 }

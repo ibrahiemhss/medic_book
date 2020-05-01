@@ -9,27 +9,27 @@ class MineNavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-        title: Text("mine"),
-        centerTitle: true,
-        elevation: 0,
-        actions: <Widget>[
-          IconButton(
-            alignment: Alignment.centerLeft,
-            onPressed: () {
-              Application.router.navigateTo(
-                context,
-                "/setting",
-                transition: TransitionType.native,
-                // transitionDuration: const Duration(milliseconds: 300),
-              );
-            },
-            icon: SvgPicture.asset(
-              MyAssets.iconSetting,
-              width: Adapt.width(Constants.appBarIconSize + 4.0),
-              height: Adapt.height(Constants.appBarIconSize + 4.0),
-            ),
-          )
-        ],
-      );
+      title: Text("mine"),
+      centerTitle: true,
+      elevation: 0,
+      actions: <Widget>[
+        IconButton(
+          alignment: Alignment.centerLeft,
+          onPressed: () {
+            Application.router.navigateTo(
+              context,
+              "/setting",
+              transition: TransitionType.native,
+              // transitionDuration: const Duration(milliseconds: 300),
+            );
+          },
+          icon: SvgPicture.asset(
+            MyAssets.iconSetting,
+            width: Adapt.width(Constants.appBarIconSize + 4.0),
+            height: Adapt.height(Constants.appBarIconSize + 4.0),
+          ),
+        )
+      ],
+    );
   }
 }

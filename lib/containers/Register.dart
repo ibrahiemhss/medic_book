@@ -146,7 +146,8 @@ class _RegisterState extends State<Register> {
                     child: TextField(
                       controller: _confirmPasswordFilter,
                       decoration: InputDecoration(
-                          errorText: 'Confirm that the password is inconsistent with the password',
+                          errorText:
+                              'Confirm that the password is inconsistent with the password',
                           hintText: 'confirm password',
                           border: InputBorder.none,
                           fillColor: Color(AppColors.themeWhiteBlue),
@@ -167,18 +168,18 @@ class _RegisterState extends State<Register> {
                     color: Colors.transparent,
                     child: Observer(
                       builder: (_) => InkWell(
-                            onTap: () {
-                              registerStore.handleRegister();
-                            },
-                            child: Center(
-                              child: Text('register',
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontFamily: 'Poppins-Bold',
-                                      fontSize: 18,
-                                      letterSpacing: 1.0)),
-                            ),
-                          ),
+                        onTap: () {
+                          registerStore.handleRegister();
+                        },
+                        child: Center(
+                          child: Text('register',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: 'Poppins-Bold',
+                                  fontSize: 18,
+                                  letterSpacing: 1.0)),
+                        ),
+                      ),
                     ),
                   ),
                 ),

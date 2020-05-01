@@ -6,7 +6,8 @@ import 'package:provider/provider.dart';
 import 'package:medic_book/stores/homeStore.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:medic_book/helpers/Adapt.dart';
-import 'package:medic_book/helpers/constants.dart' show AppColors, Constants, MyAssets, Urls;
+import 'package:medic_book/helpers/constants.dart'
+    show AppColors, Constants, MyAssets, Urls;
 
 import './FirstScreen.dart';
 import './Mine.dart';
@@ -30,9 +31,7 @@ class _EntranceState extends State<Entrance> {
 
   //Count, click the back button to exit the program
   int _lastClickTime = 0;
-  final List<String> _svgAssetUrl = [
-    MyAssets.iconHome,
-    MyAssets.iconMyself  ];
+  final List<String> _svgAssetUrl = [MyAssets.iconHome, MyAssets.iconMyself];
 
   initState() {
     super.initState();
@@ -217,7 +216,6 @@ class _EntranceState extends State<Entrance> {
               items: <BottomNavigationBarItem>[
                 BottomNavigationBarItem(icon: bottomIcon(0)),
                 BottomNavigationBarItem(icon: bottomIcon(1)),
-
               ],
               currentIndex: _activeIndex,
               onTap: (int index) {

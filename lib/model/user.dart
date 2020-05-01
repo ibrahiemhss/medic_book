@@ -1,4 +1,3 @@
-
 import 'dart:convert';
 
 import 'package:floor/floor.dart';
@@ -17,7 +16,6 @@ String userToJson(User data) => json.encode(data.toJson());
       parentColumns: ['id'],
       entity: Clinic,
     ),
-
   ],
 )
 class User {
@@ -54,44 +52,45 @@ class User {
   });
 
   factory User.fromJson(Map<String, dynamic> json) => User(
-    clinicId: json["clinic_id"],
-    createdAt:json["created_at"],
-    email: json["email"],
-    id: json["id"],
-    job: json["job"],
-    password: json["password"],
-    phone: json["phone"],
-    photo: json["photo"],
-    role: json["role"],
-    specialization: json["specialization"],
-    status: json["status"],
-    theName: json["the_name"],
-    updatedBy: json["updated_by"],
-  );
+        clinicId: json["clinic_id"],
+        createdAt: json["created_at"],
+        email: json["email"],
+        id: json["id"],
+        job: json["job"],
+        password: json["password"],
+        phone: json["phone"],
+        photo: json["photo"],
+        role: json["role"],
+        specialization: json["specialization"],
+        status: json["status"],
+        theName: json["the_name"],
+        updatedBy: json["updated_by"],
+      );
 
   Map<String, dynamic> toJson() => {
-    "clinic_id": clinicId,
-    "created_at": createdAt,
-    "email": email,
-    "id": id,
-    "job": job,
-    "password": password,
-    "phone": phone,
-    "photo": photo,
-    "role": role,
-    "specialization": specialization,
-    "status": status,
-    "the_name": theName,
-    "updated_by": updatedBy,
-  };
+        "clinic_id": clinicId,
+        "created_at": createdAt,
+        "email": email,
+        "id": id,
+        "job": job,
+        "password": password,
+        "phone": phone,
+        "photo": photo,
+        "role": role,
+        "specialization": specialization,
+        "status": status,
+        "the_name": theName,
+        "updated_by": updatedBy,
+      };
 }
+
 @dao
 abstract class UserDao {
   @Query('SELECT * FROM User')
   Future<List<User>> findAllUser();
 
   @Query('SELECT * FROM User WHERE id = :id')
-  Future<User>  findDataByValue(int value);
+  Future<User> findDataByValue(int value);
   @insert
   Future<List<int>> insertAllUser(List<User> list);
   @insert

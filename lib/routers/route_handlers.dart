@@ -25,7 +25,6 @@ Handler settingRouteHandler = Handler(
   return Setting();
 });
 
-
 // login
 Handler loginRouterHandler = Handler(
     handlerFunc: (BuildContext context, Map<String, List<String>> params) {

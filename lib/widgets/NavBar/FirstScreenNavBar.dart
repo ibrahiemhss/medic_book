@@ -36,7 +36,8 @@ class FirstScreenNavBar extends StatelessWidget {
               Text(
                 "search for",
                 style: TextStyle(
-                    color: Color(AppColors.fontColorGray), fontSize: Adapt.px(16.0)),
+                    color: Color(AppColors.fontColorGray),
+                    fontSize: Adapt.px(16.0)),
               )
             ],
           ),

@@ -2,13 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:medic_book/widgets/common/CommonTitle.dart';
 import 'dart:math';
 
-const List<String> _searchNouns = [
-  'Go',
-  '1',
-  '2',
-  '3',
-  '4'
-];
+const List<String> _searchNouns = ['Go', '1', '2', '3', '4'];
 
 const List<int> _searchColors = [
   0xfff7CA0DA,

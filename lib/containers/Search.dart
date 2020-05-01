@@ -25,7 +25,7 @@ class _SearchState extends State<Search> {
               SizedBox(
                 height: 32.0,
               ),
-             // PopularSearches(),
+              // PopularSearches(),
               History()
             ],
           ),

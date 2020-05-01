@@ -14,12 +14,12 @@ class HomeStore = _HomeStore with _$HomeStore;
 
 // The store-class
 abstract class _HomeStore with Store {
-  LocalDataSource localDataSource=sl<LocalDataSource>();
+  LocalDataSource localDataSource = sl<LocalDataSource>();
 
   @observable
   bool logedIn = false;
   @observable
-  User user ;
+  User user;
   // Recommended list
   @observable
   CommonDataList recommendData;
@@ -36,6 +36,7 @@ abstract class _HomeStore with Store {
   Future getUserInfo(int id) async {
     user = await localDataSource.getUsetInfo(id);
   }
+
   // Get version update notification
   @action
   Future getVersion() async {

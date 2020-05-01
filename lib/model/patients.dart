@@ -1,4 +1,3 @@
-
 import 'dart:convert';
 
 import 'package:floor/floor.dart';
@@ -17,7 +16,6 @@ String patientsToJson(Patients data) => json.encode(data.toJson());
       parentColumns: ['id'],
       entity: Clinic,
     ),
-
   ],
 )
 class Patients {
@@ -54,44 +52,45 @@ class Patients {
   });
 
   factory Patients.fromJson(Map<String, dynamic> json) => Patients(
-    id: json["id"],
-    patientName: json["patient_name"],
-    phone: json["phone"],
-    photo: json["photo"],
-    birthDate: json["birth_date"],
-    tall: json["tall"],
-    weight: json["weight"],
-    status: json["status"],
-    about: json["about"],
-    clinicId: json["clinic_id"],
-    updatedBy: json["updated_by"],
-    gender: json["gender"],
-    occupation: json["occupation"],
-  );
+        id: json["id"],
+        patientName: json["patient_name"],
+        phone: json["phone"],
+        photo: json["photo"],
+        birthDate: json["birth_date"],
+        tall: json["tall"],
+        weight: json["weight"],
+        status: json["status"],
+        about: json["about"],
+        clinicId: json["clinic_id"],
+        updatedBy: json["updated_by"],
+        gender: json["gender"],
+        occupation: json["occupation"],
+      );
 
   Map<String, dynamic> toJson() => {
-    "id": id,
-    "patient_name": patientName,
-    "phone": phone,
-    "photo": photo,
-    "birth_date": birthDate,
-    "tall": tall,
-    "weight": weight,
-    "status": status,
-    "about": about,
-    "clinic_id": clinicId,
-    "updated_by": updatedBy,
-    "gender": gender,
-    "occupation": occupation,
-  };
+        "id": id,
+        "patient_name": patientName,
+        "phone": phone,
+        "photo": photo,
+        "birth_date": birthDate,
+        "tall": tall,
+        "weight": weight,
+        "status": status,
+        "about": about,
+        "clinic_id": clinicId,
+        "updated_by": updatedBy,
+        "gender": gender,
+        "occupation": occupation,
+      };
 }
+
 @dao
 abstract class PatientsDao {
   @Query('SELECT * FROM Patients')
   Future<List<Patients>> findAllPatients();
 
   @Query('SELECT * FROM Patients WHERE id = :id')
-  Future<List<Patients>>  findDataByValue(int value);
+  Future<List<Patients>> findDataByValue(int value);
   @insert
   Future<List<int>> insertAllPatients(List<Patients> list);
   @insert

@@ -70,7 +70,6 @@ flutter:
   assets:
     - assets/icon/
     - lib/containers/
-    - lib/model/
     - lib/helpers/
     - lib/routers/
     - lib/stores/

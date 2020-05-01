@@ -1,4 +1,3 @@
-
 import 'dart:convert';
 
 import 'package:floor/floor.dart';
@@ -6,6 +5,7 @@ import 'package:floor/floor.dart';
 Clinic clinicFromJson(String str) => Clinic.fromJson(json.decode(str));
 
 String clinicToJson(Clinic data) => json.encode(data.toJson());
+
 @Entity(
   tableName: 'Clinic',
 )
@@ -32,34 +32,35 @@ class Clinic {
   });
 
   factory Clinic.fromJson(Map<String, dynamic> json) => Clinic(
-    address: json["address"],
-    clinicName: json["clinic_name"],
-    id: json["id"],
-    logo: json["logo"],
-    phone: json["phone"],
-    since: json["since"],
-    specialization: json["specialization"],
-    updatedBy: json["updated_by"],
-  );
+        address: json["address"],
+        clinicName: json["clinic_name"],
+        id: json["id"],
+        logo: json["logo"],
+        phone: json["phone"],
+        since: json["since"],
+        specialization: json["specialization"],
+        updatedBy: json["updated_by"],
+      );
 
   Map<String, dynamic> toJson() => {
-    "address": address,
-    "clinic_name": clinicName,
-    "id": id,
-    "logo": logo,
-    "phone": phone,
-    "since": since,
-    "specialization": specialization,
-    "updated_by": updatedBy,
-  };
+        "address": address,
+        "clinic_name": clinicName,
+        "id": id,
+        "logo": logo,
+        "phone": phone,
+        "since": since,
+        "specialization": specialization,
+        "updated_by": updatedBy,
+      };
 }
+
 @dao
 abstract class ClinicDao {
   @Query('SELECT * FROM Clinic')
   Future<List<Clinic>> findAllClinic();
 
   @Query('SELECT * FROM Clinic WHERE id = :id')
-  Future<List<Clinic>>  findDataByValue(int value);
+  Future<List<Clinic>> findDataByValue(int value);
   @insert
   Future<List<int>> insertAllClinic(List<Clinic> list);
   @insert

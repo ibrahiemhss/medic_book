@@ -24,8 +24,10 @@ abstract class _LoginStore with Store {
 
   @action
   void getInfo() async {
-    Response response = await MyHttpRequest().dio.get('http://api.soscoon.com/playlist/hot');
+    Response response =
+        await MyHttpRequest().dio.get('http://api.soscoon.com/playlist/hot');
     print(response);
   }
 }
+
 LoginStore $store = LoginStore();
