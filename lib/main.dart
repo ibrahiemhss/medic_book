@@ -25,12 +25,15 @@ void main() async {
   runApp(MultiProvider(
     providers: [
       Provider<RegisterStore>(
+        lazy: true,
         create: (_) => RegisterStore(),
       ),
       Provider<LoginStore>(
+        lazy: true,
         create: (_) => LoginStore(),
       ),
       Provider<HomeStore>(
+        lazy: true,
         create: (_) => HomeStore(),
       ),
     ],

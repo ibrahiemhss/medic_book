@@ -28,8 +28,9 @@ abstract class _HomeStore with Store {
   VersionData versionData;
 
   @action
-  Future checkLogIn() async {
-    logedIn = await localDataSource.checkLogedIn();
+  bool checkLogIn() {
+   logedIn =false;
+    //logedIn = await localDataSource.checkLogedIn();
   }
 
   @action

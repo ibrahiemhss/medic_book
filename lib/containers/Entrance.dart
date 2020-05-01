@@ -108,7 +108,7 @@ class _EntranceState extends State<Entrance> {
   Widget build(BuildContext context) {
     return Observer(
       builder: (_) {
-        String _version = Provider.of<HomeStore>(context)?.versionData?.version;
+        String _version = Provider.of<HomeStore>(context,listen: false)?.versionData?.version;
         List<String> _versionList =
             Provider.of<HomeStore>(context)?.versionData?.data;
 
