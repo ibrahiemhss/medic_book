@@ -16,7 +16,7 @@ class _FirstScreenState extends State<FirstScreen>
     with AutomaticKeepAliveClientMixin {
   HomeStore homeStore;
   EasyRefreshController _controller;
-  bool _hasLogeIn=false;
+  bool _signedIn=false;
   @override
   void initState() {
     // TODO: implement initState
@@ -24,16 +24,17 @@ class _FirstScreenState extends State<FirstScreen>
     // Pull down to refresh
     _controller = EasyRefreshController();
     // get first enter values
-    Future(() {
+
       try{
         homeStore = Provider.of<HomeStore>(this.context, listen: false);
-        _hasLogeIn=  homeStore.checkLogIn();
+       // _signedIn=  homeStore.checkLogIn();
+        print("get entrance data values  is :\n"
+            " signedIn=${homeStore.checkLogIn().toString()}");
+
       }catch(e){
         print("get entrance data exception is : ${e.toString()}");
-      }
 
-
-    });
+    }
   }
 
   @override
@@ -58,7 +59,7 @@ class _FirstScreenState extends State<FirstScreen>
                 right: Constants.pageMarginSide,
                 top: 20.0,
                 bottom: 40),
-            child: FirstScreenContent(),
+            child: FirstScreenContent(signedIn: _signedIn,),
           ),
         ],
       ),

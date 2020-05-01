@@ -44,6 +44,7 @@ dependencies:
   petitparser: ^2.4.0
   data_connection_checker: ^0.3.4
   get_it: ^4.0.2
+  font_awesome_flutter:
 
 dev_dependencies:
   flutter_test:

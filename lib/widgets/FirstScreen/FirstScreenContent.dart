@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:medic_book/containers/Login.dart';
 import 'package:medic_book/widgets/FirstScreen/SearchNouns.dart';
 
 class FirstScreenContent extends StatelessWidget {
@@ -11,7 +12,7 @@ class FirstScreenContent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        signedIn?SearchNouns():,
+        signedIn?SearchNouns():Login(),
       ],
     );
   }
