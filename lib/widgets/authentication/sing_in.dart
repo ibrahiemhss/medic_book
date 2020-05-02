@@ -71,7 +71,7 @@ class _LoginState extends State<Login>
                       width: 250.0,
                       height: 40.0,
                       fit: BoxFit.fill,
-                      image: new AssetImage('assets/img/login_logo.png')),
+                      image: new AssetImage('assets/images/icon_ar.png')),
                 ),
                 Padding(
                   padding: EdgeInsets.only(top: 20.0),

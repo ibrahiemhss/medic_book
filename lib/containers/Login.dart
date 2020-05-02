@@ -32,6 +32,7 @@ class _LoginState extends State<Login> {
     //       MaterialPageRoute(builder: (context) => Entrance()),
     //       (route) => route == null);
     // });
+
   }
 
 
@@ -53,8 +54,7 @@ class _LoginState extends State<Login> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
+    return  Container(
         margin: EdgeInsets.symmetric(horizontal: Constants.pageMarginSide),
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: <
             Widget>[
@@ -163,7 +163,6 @@ class _LoginState extends State<Login> {
             ],
           )
         ]),
-      ),
     );
   }
 }
