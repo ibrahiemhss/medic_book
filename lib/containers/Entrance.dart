@@ -1,20 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:medic_book/models/common.dart';
-import 'package:provider/provider.dart';
-import 'package:medic_book/stores/homeStore.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:medic_book/helpers/Adapt.dart';
 import 'package:medic_book/helpers/constants.dart'
     show AppColors, Constants, MyAssets, Urls;
+import 'package:medic_book/stores/homeStore.dart';
+import 'package:provider/provider.dart';
 
 import './FirstScreen.dart';
 import './Mine.dart';
 import 'package:medic_book/widgets/NavBar/FirstScreenNavBar.dart';
 import 'package:medic_book/widgets/NavBar/MineNavBar.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import 'Login.dart';
 
@@ -28,6 +25,7 @@ class _EntranceState extends State<Entrance> {
   List<Widget> _pages;
   List _navBars;
   String _localVersion;
+  HomeStore homeStore;
 
   //Count, click the back button to exit the program
   int _lastClickTime = 0;
@@ -35,6 +33,8 @@ class _EntranceState extends State<Entrance> {
 
   initState() {
     super.initState();
+    homeStore = Provider.of<HomeStore>(this.context, listen: false);
+
     // 2 pages of the first screen
     _pages = <Widget>[FirstScreen(), Mine(), Login()];
     // Navigation Bar
@@ -67,45 +67,42 @@ class _EntranceState extends State<Entrance> {
   }
 
 
-  // Jump link
-  _launchURL() async {
-    //
-    const url = Urls.baseURL;
-    if (await canLaunch(url)) {
-      await launch(url);
-    } else {
-      throw 'Could not launch $url';
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
-          onWillPop: _doubleExit,
-          child: Scaffold(
-            appBar: PreferredSize(
-              preferredSize: Size.fromHeight(50.0),
-              child: _navBars[_activeIndex],
+    return Observer(
+        builder: (_) {
+      _activeIndex =  homeStore.pageIndex;
+      print("get changed page index =${homeStore.pageIndex}");
+
+      return WillPopScope(
+            onWillPop: _doubleExit,
+            child: Scaffold(
+              appBar: PreferredSize(
+                preferredSize: Size.fromHeight(50.0),
+                child: _navBars[_activeIndex],
+              ),
+              body: IndexedStack(
+                index: _activeIndex,
+                children: _pages,
+              ),
+              bottomNavigationBar: CupertinoTabBar(
+                backgroundColor: Color(AppColors.themeColor),
+                items: <BottomNavigationBarItem>[
+                  BottomNavigationBarItem(icon: bottomIcon(0)),
+                  BottomNavigationBarItem(icon: bottomIcon(1)),
+                ],
+                currentIndex: _activeIndex,
+                onTap: (int index) {
+                //  setState(() {
+                  print("onClick page index =$index");
+                    homeStore.setPageIndex(index);
+                 // });
+                },
+              ),
             ),
-            body: IndexedStack(
-              index: _activeIndex,
-              children: _pages,
-            ),
-            bottomNavigationBar: CupertinoTabBar(
-              backgroundColor: Color(AppColors.themeColor),
-              items: <BottomNavigationBarItem>[
-                BottomNavigationBarItem(icon: bottomIcon(0)),
-                BottomNavigationBarItem(icon: bottomIcon(1)),
-              ],
-              currentIndex: _activeIndex,
-              onTap: (int index) {
-                setState(() {
-                  _activeIndex = index;
-                });
-              },
-            ),
-          ),
-        );
+          );
+      },
+    );
 
   }
 }

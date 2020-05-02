@@ -126,18 +126,7 @@ class _LoginState extends State<Login> {
               ),
             ),
           ),
-          InkWell(
-            onTap: () {
-              fluwx
-                  .sendWeChatAuth(
-                      scope: "snsapi_userinfo", state: "wechat_sdk_demo_test")
-                  .then((data) {});
-            },
-            child: Text("WeChat login",
-                style: TextStyle(
-                    color: Color(AppColors.mainColor),
-                    fontFamily: "Poppins-Bold")),
-          ),
+
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[

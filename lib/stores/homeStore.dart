@@ -8,7 +8,7 @@ import 'package:dio/dio.dart';
 import '../injection_container.dart';
 
 // Include generated file
-part 'homeStore.changeG.dart';
+part 'homeStore.g.dart';
 
 class HomeStore = _HomeStore with _$HomeStore;
 
@@ -19,11 +19,19 @@ abstract class _HomeStore with Store {
   @observable
   bool logedIn = false;
   @observable
+  int pageIndex = 0;
+
+  @observable
   User user;
   // Recommended list
   @observable
   CommonDataList recommendData;
 
+  @action
+  bool setPageIndex(int index) {
+    pageIndex =index;
+    //logedIn = await localDataSource.checkLogedIn();
+  }
   @action
   bool checkLogIn() {
    logedIn =false;
