@@ -40,14 +40,3 @@ class CommonDataList {
   factory CommonDataList.fromJson(Map<String, dynamic> json) =>
       _$CommonDataListFromJson(json);
 }
-
-// Version Information
-
-@JsonSerializable(nullable: false)
-class VersionData {
-  final String version;
-  final List<String> data;
-  VersionData({this.data, this.version});
-  factory VersionData.fromJson(Map<String, dynamic> json) =>
-      _$VersionDataFromJson(json);
-}

@@ -11,10 +11,12 @@ import 'package:medic_book/helpers/constants.dart'
 
 import './FirstScreen.dart';
 import './Mine.dart';
-import 'package:medic_book/widgets/NavBar/first_screen_navbar.dart';
-import 'package:medic_book/widgets/NavBar/mine_navbar.dart';
+import 'package:medic_book/widgets/NavBar/FirstScreenNavBar.dart';
+import 'package:medic_book/widgets/NavBar/MineNavBar.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
+
+import 'Login.dart';
 
 class Entrance extends StatefulWidget {
   @override
@@ -22,8 +24,6 @@ class Entrance extends StatefulWidget {
 }
 
 class _EntranceState extends State<Entrance> {
-  // Version Information
-  VersionData versionData;
   int _activeIndex = 0;
   List<Widget> _pages;
   List _navBars;
@@ -36,21 +36,11 @@ class _EntranceState extends State<Entrance> {
   initState() {
     super.initState();
     // 2 pages of the first screen
-    _pages = <Widget>[FirstScreen(), Mine()];
+    _pages = <Widget>[FirstScreen(), Mine(), Login()];
     // Navigation Bar
-    _navBars = [FirstScreenNavBar(), MineNavBar()];
-    /**
-     * Get local version information
-     */
-    _loadVersion();
+    _navBars = [FirstScreenNavBar(), MineNavBar(),FirstScreenNavBar(),];
 
-    Future(() {
-      /**
-       * Send a request to obtain version information
-       * Get data, check version number
-       * */
-      Provider.of<HomeStore>(context,listen: false).getVersion();
-    });
+
   }
 
 // Bottom navigation tab
@@ -76,22 +66,6 @@ class _EntranceState extends State<Entrance> {
     }
   }
 
-  // Get locally stored version information
-  _loadVersion() async {
-    final SharedPreferences prefs = await SharedPreferences.getInstance();
-    setState(() {
-      _localVersion = prefs.getString('app_veriosn') ?? '1.0.0';
-    });
-  }
-
-  // Save version information
-  _saveVersion(String appVeriosn) async {
-    final SharedPreferences prefs = await SharedPreferences.getInstance();
-    prefs.setString('app_veriosn', appVeriosn);
-    setState(() {
-      _localVersion = appVeriosn;
-    });
-  }
 
   // Jump link
   _launchURL() async {
@@ -106,101 +80,7 @@ class _EntranceState extends State<Entrance> {
 
   @override
   Widget build(BuildContext context) {
-    return Observer(
-      builder: (_) {
-        String _version = Provider.of<HomeStore>(context,listen: false)?.versionData?.version;
-        List<String> _versionList =
-            Provider.of<HomeStore>(context)?.versionData?.data;
-
-        if (_version != null && _version != _localVersion) {
-          // Version update popup
-          Future.delayed(Duration.zero, () {
-            showDialog(
-                context: context,
-                builder: (_) => Scaffold(
-                      backgroundColor: Colors.transparent,
-                      body: Center(
-                        child: Container(
-                          width: 320.0,
-                          height: 420.0,
-                          padding: EdgeInsets.all(20.0),
-                          decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(10.0)),
-                          child: Column(
-                            children: <Widget>[
-                              Text(
-                                'New version upgrade',
-                                style: TextStyle(
-                                    color: Color(0xff202326), fontSize: 24.0),
-                              ),
-                              SizedBox(
-                                height: 15.0,
-                              ),
-                              Expanded(
-                                child: SingleChildScrollView(
-                                  child: Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: _versionList
-                                        .map((String info) => Text(
-                                              info,
-                                              textAlign: TextAlign.left,
-                                              style: TextStyle(
-                                                  fontSize: 18.0, height: 1.3),
-                                            ))
-                                        .toList(),
-                                  ),
-                                ),
-                              ),
-                              RaisedButton(
-                                elevation: 0.0,
-                                child: SizedBox(
-                                  width: double.infinity,
-                                  height: 50.0,
-                                  child: Text(
-                                    'Not updating',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(height: 2.0),
-                                  ),
-                                ),
-                                onPressed: () {
-                                  _saveVersion(_version);
-                                  Navigator.of(context, rootNavigator: true)
-                                      .pop();
-                                },
-                              ),
-                              SizedBox(
-                                height: 15.0,
-                              ),
-                              RaisedButton(
-                                elevation: 0.0,
-                                child: SizedBox(
-                                  width: double.infinity,
-                                  height: 50.0,
-                                  child: Text(
-                                    'update immediately',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                        color: Colors.white, height: 2.0),
-                                  ),
-                                ),
-                                color: Color(AppColors.mainColor),
-                                onPressed: () {
-                                  _saveVersion(_version);
-                                  _launchURL();
-                                  Navigator.of(context, rootNavigator: true)
-                                      .pop();
-                                },
-                              )
-                            ],
-                          ),
-                        ),
-                      ),
-                    ));
-          });
-        }
-        return WillPopScope(
+    return WillPopScope(
           onWillPop: _doubleExit,
           child: Scaffold(
             appBar: PreferredSize(
@@ -226,7 +106,6 @@ class _EntranceState extends State<Entrance> {
             ),
           ),
         );
-      },
-    );
+
   }
 }

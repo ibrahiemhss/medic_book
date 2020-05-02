@@ -27,7 +27,7 @@ class _FirstScreenState extends State<FirstScreen>
 
       try{
         homeStore = Provider.of<HomeStore>(this.context, listen: false);
-       // _signedIn=  homeStore.checkLogIn();
+        _signedIn=  homeStore.checkLogIn();
         print("get entrance data values  is :\n"
             " signedIn=${homeStore.checkLogIn().toString()}");
 
@@ -59,7 +59,7 @@ class _FirstScreenState extends State<FirstScreen>
                 right: Constants.pageMarginSide,
                 top: 20.0,
                 bottom: 40),
-            child: FirstScreenContent(signedIn: _signedIn,),
+            child: FirstScreenContent(signedIn: _signedIn??false,),
           ),
         ],
       ),

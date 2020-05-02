@@ -23,9 +23,6 @@ abstract class _HomeStore with Store {
   // Recommended list
   @observable
   CommonDataList recommendData;
-  // Version Information
-  @observable
-  VersionData versionData;
 
   @action
   bool checkLogIn() {
@@ -38,12 +35,6 @@ abstract class _HomeStore with Store {
     user = await localDataSource.getUsetInfo(id);
   }
 
-  // Get version update notification
-  @action
-  Future getVersion() async {
-    Response response = await MyHttpRequest().dio.get('/api/public/version');
-    versionData = VersionData.fromJson(response.data);
-  }
 }
 
 HomeStore $store = HomeStore();

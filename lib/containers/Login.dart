@@ -32,21 +32,8 @@ class _LoginState extends State<Login> {
     //       MaterialPageRoute(builder: (context) => Entrance()),
     //       (route) => route == null);
     // });
-
-    _initFluwx();
   }
 
-  _initFluwx() async {
-    await fluwx.registerWxApi(
-      appId: "wxd930ea5d5a258f4f",
-      doOnAndroid: true,
-      doOnIOS: false,
-      universalLink: '',
-      // enableMTA: false,
-    );
-    var result = await fluwx.isWeChatInstalled;
-    print("is installed $result");
-  }
 
   void _emailListen() {
     if (_emailFilter.text.isEmpty) {
