@@ -5,6 +5,7 @@ import 'package:medic_book/widgets/common/CommonTitle.dart';
 
 class LeaderboardContent extends StatelessWidget {
   @override
+
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.symmetric(horizontal: Constants.pageMarginSide),

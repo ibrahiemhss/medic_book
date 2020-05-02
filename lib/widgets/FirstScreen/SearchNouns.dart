@@ -15,7 +15,6 @@ const List<int> _searchColors = [
 class SearchNouns extends StatelessWidget {
   final List<Widget> _textChildren = _searchNouns.map((String value) {
     int _randomNumber = Random().nextInt(_searchColors.length);
-
     return Container(
       padding: EdgeInsets.symmetric(vertical: 6.0, horizontal: 16.0),
       decoration: BoxDecoration(

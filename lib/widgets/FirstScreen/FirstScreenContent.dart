@@ -6,7 +6,6 @@ import 'package:medic_book/widgets/FirstScreen/SearchNouns.dart';
 
 class FirstScreenContent extends StatelessWidget {
   final bool signedIn;
-
   const FirstScreenContent({Key key,@required this.signedIn}) : super(key: key);
   @override
   Widget build(BuildContext context) {
