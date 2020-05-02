@@ -11,8 +11,8 @@ import 'package:medic_book/helpers/constants.dart'
 
 import './FirstScreen.dart';
 import './Mine.dart';
-import 'package:medic_book/widgets/NavBar/FirstScreenNavBar.dart';
-import 'package:medic_book/widgets/NavBar/MineNavBar.dart';
+import 'package:medic_book/widgets/NavBar/first_screen_navbar.dart';
+import 'package:medic_book/widgets/NavBar/mine_navbar.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -49,7 +49,7 @@ class _EntranceState extends State<Entrance> {
        * Send a request to obtain version information
        * Get data, check version number
        * */
-      Provider.of<HomeStore>(context).getVersion();
+      Provider.of<HomeStore>(context,listen: false).getVersion();
     });
   }
 

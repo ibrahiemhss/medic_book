@@ -5,13 +5,16 @@ import 'package:medic_book/helpers/constants.dart';
 import 'package:medic_book/routers/application.dart';
 import 'package:fluro/fluro.dart';
 
+import 'base_app_bar.dart';
+
 class MineNavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return AppBar(
-      title: Text("mine"),
+    return BaseAppbar().build(
+      widgetTitle: Text("mine"),
       centerTitle: true,
       elevation: 0,
+      showLeading: false,
       actions: <Widget>[
         IconButton(
           alignment: Alignment.centerLeft,
