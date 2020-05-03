@@ -36,11 +36,19 @@ class _EntranceState extends State<Entrance> {
     homeStore = Provider.of<HomeStore>(this.context, listen: false);
     Provider.of<HomeStore>(this.context, listen: false).checkIsSecondEnter();
     // 2 pages of the first screen
-    _pages = <Widget>[FirstScreen(), Mine(), Login()];
+    _pages = <Widget>[
+      FirstScreen(),
+      Mine(),
+      Login(
+        secondEnter: _second_enter,
+      )
+    ];
     // Navigation Bar
-    _navBars = [FirstScreenNavBar(), MineNavBar(),FirstScreenNavBar(),];
-
-
+    _navBars = [
+      FirstScreenNavBar(),
+      MineNavBar(),
+      FirstScreenNavBar(),
+    ];
   }
 
 // Bottom navigation tab
@@ -80,7 +88,7 @@ class _EntranceState extends State<Entrance> {
           "");
 
       if(!_second_enter){
-        return Scaffold(body:Login());
+        return Login(secondEnter: false,);
       }else{
         return WillPopScope(
           onWillPop: _doubleExit,

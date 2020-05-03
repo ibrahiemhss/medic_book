@@ -1,9 +1,8 @@
+import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
 import 'package:medic_book/containers/Entrance.dart';
-import 'package:medic_book/routers/application.dart';
-import 'package:fluro/fluro.dart';
 import 'package:medic_book/helpers/constants.dart';
-import 'package:fluwx/fluwx.dart' as fluwx;
+import 'package:medic_book/routers/application.dart';
 import 'package:medic_book/stores/loginStore.dart';
 import 'package:provider/provider.dart';
 
@@ -160,17 +159,19 @@ class _LoginState extends State<Login> {
 
             ],
           ),
-          Container(
-            margin: EdgeInsets.only(bottom: 40.0,top: 40.0),
-            height: 48.0,
-            decoration: BoxDecoration(
-                color: Color(AppColors.mainColor),
-                borderRadius: BorderRadius.circular(4.0)),
-            child: Material(
-              color: Colors.transparent,
-              child: InkWell(
-                onTap: () {
-                  loginStore.setSecondEnter(true);
+          widget.secondEnter
+                ? Container()
+                : Container(
+                    margin: EdgeInsets.only(bottom: 40.0, top: 40.0),
+                    height: 48.0,
+                    decoration: BoxDecoration(
+                        color: Color(AppColors.mainColor),
+                        borderRadius: BorderRadius.circular(4.0)),
+                    child: Material(
+                      color: Colors.transparent,
+                      child: InkWell(
+                        onTap: () {
+                          loginStore.setSecondEnter(true);
                   // Prohibit jumping back to the previously registered route
                   Navigator.of(context).pushAndRemoveUntil(
                       new MaterialPageRoute(builder: (context) => Entrance()),

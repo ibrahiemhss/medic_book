@@ -11,7 +11,7 @@ import 'package:medic_book/stores/registerStore.dart';
 import 'package:medic_book/stores/loginStore.dart';
 import 'package:medic_book/stores/homeStore.dart';
 import 'package:medic_book/injection_container.dart' as di;
-import 'package:shared_preferences/shared_preferences.dart';
+//import 'package:shared_preferences/shared_preferences.dart';
 
 import 'injection_container.dart';
 
@@ -21,9 +21,9 @@ void main() async {
   await di.init();
   // Modify the system status bar color
 
-  final SharedPreferences sharedPreferences=sl<SharedPreferences>();
+  //final SharedPreferences sharedPreferences=sl<SharedPreferences>();
 
-  print("in main sharedPreferences secondEnter value =${sharedPreferences.getBool(SharedPreferenceKeys.SECOND_ENTER).toString()}");
+  //print("in main sharedPreferences secondEnter value =${sharedPreferences.getBool(SharedPreferenceKeys.SECOND_ENTER).toString()}");
 
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
     systemNavigationBarColor:

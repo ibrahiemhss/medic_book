@@ -3,14 +3,14 @@ import 'dart:convert';
 import 'dart:ui';
 
 import 'package:flutter/services.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+//import 'package:shared_preferences/shared_preferences.dart';
 
 ///
 /// Preferences related
 ///
 const String _storageKey = "MyApplication_";
 const List<String> _supportedLanguages = ['en', 'ar', 'ku'];
-Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
+//Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
 
 class GlobalTranslations {
   Locale _locale;
@@ -111,9 +111,9 @@ class GlobalTranslations {
   /// Generic routine to fetch an application preference
   /// ----------------------------------------------------------
   Future<String> _getApplicationSavedInformation(String name) async {
-    final SharedPreferences prefs = await _prefs;
+   // final SharedPreferences prefs = await _prefs;
 
-    return prefs.getString(_storageKey + name) ?? '';
+   // return prefs.getString(_storageKey + name) ?? '';
   }
 
   /// ----------------------------------------------------------
@@ -121,9 +121,9 @@ class GlobalTranslations {
   /// ----------------------------------------------------------
   Future<bool> _setApplicationSavedInformation(
       String name, String value) async {
-    final SharedPreferences prefs = await _prefs;
+   // final SharedPreferences prefs = await _prefs;
 
-    return prefs.setString(_storageKey + name, value);
+   // return prefs.setString(_storageKey + name, value);
   }
 
   ///

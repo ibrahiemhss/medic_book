@@ -1,4 +1,4 @@
-import 'package:medic_book/data/datasources/local/local_data_source.dart';
+import 'package:medic_book/data/datasources/local/entrance.local_data_source.dart';
 import 'package:medic_book/model/user.dart';
 import 'package:mobx/mobx.dart';
 import 'package:medic_book/api/my_http_request.dart';

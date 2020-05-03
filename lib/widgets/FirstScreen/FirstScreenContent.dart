@@ -11,8 +11,12 @@ class FirstScreenContent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        signedIn?SearchNouns():Login(),
-       // SearchNouns(),
+        signedIn
+            ? SearchNouns()
+            : Login(
+                secondEnter: true,
+              ),
+        // SearchNouns(),
       ],
     );
   }

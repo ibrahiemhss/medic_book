@@ -10,7 +10,6 @@ import 'package:medic_book/containers/SplashPage.dart';
 // import 'package:flutter/painting.dart';
 import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
-import 'package:medic_book/helpers/fluro_convert_util.dart';
 
 Handler rootHandler = Handler(
     handlerFunc: (BuildContext context, Map<String, List<String>> params) {
@@ -28,7 +27,9 @@ Handler settingRouteHandler = Handler(
 // login
 Handler loginRouterHandler = Handler(
     handlerFunc: (BuildContext context, Map<String, List<String>> params) {
-  return Login();
+  return Login(
+    secondEnter: true,
+  );
 });
 
 // registered

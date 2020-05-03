@@ -4,7 +4,6 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:medic_book/api/my_http_request.dart';
 import 'package:medic_book/models/common.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 abstract class RemoteDataSource {
   Future getData();
@@ -13,11 +12,9 @@ abstract class RemoteDataSource {
 class RemoteDataSourceImpl implements RemoteDataSource {
   final HttpClient httpClient;
   final MyHttpRequest myHttpRequest;
-  final SharedPreferences sharedPreferences;
 
   RemoteDataSourceImpl(
       {@required this.myHttpRequest,
-      @required this.sharedPreferences,
       @required this.httpClient});
 
   Future getData() async {
