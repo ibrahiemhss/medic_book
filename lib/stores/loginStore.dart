@@ -1,15 +1,19 @@
+import 'package:medic_book/data/datasources/local/local_data_source.dart';
 import 'package:mobx/mobx.dart';
 import 'package:medic_book/api/my_http_request.dart';
 import 'package:dio/dio.dart';
 
-// Include generated file
-part 'loginStore.changeG.dart';
+import '../injection_container.dart';
 
-// This is the class used by rest of your codebase
+// Include generated file
+part 'loginStore.g.dart';
+
 class LoginStore = _LoginStore with _$LoginStore;
 
 // The store-class
 abstract class _LoginStore with Store {
+  LocalDataSource localDataSource = sl<LocalDataSource>();
+
   @observable
   bool tile = false;
 
@@ -23,10 +27,16 @@ abstract class _LoginStore with Store {
   num counter() => this.count++;
 
   @action
-  void getInfo() async {
+  Future getInfo() async {
     Response response =
         await MyHttpRequest().dio.get('http://api.soscoon.com/playlist/hot');
     print(response);
+  }
+
+  @action
+  void setSecondEnter(bool enter)  {
+
+    localDataSource.setSecondEnter(enter);
   }
 }
 

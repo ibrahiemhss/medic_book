@@ -46,3 +46,40 @@ class Constants {
   static const double pageMarginSide = 24.0;
   static const double pageMarginUpDown = 24.0;
 }
+//SharedPreference keys
+class SharedPreferenceKeys {
+  static const String USER_ID = "user_id";
+  static const String SECOND_ENTER = "SECOND_ENTER";
+  static const String SIGNED_IN = "SIGNED_IN";
+  static const String USER = "USER";
+  static const String TOTAL_PAGE_PHONES = "TOTAL_PAGE_PHONES";
+  static const String TOTAL_PAGE_MAIN_DATA = "TOTAL_PAGE_MAIN_DATA";
+
+  static const String ADVERTISEMENTS = "ADVERTISEMENTS";
+  static const String COUNTRIES = "COUNTRIES";
+  static const String IRAQ_PROVINCES = "IRAQ_PROVINCES";
+  static const String IRAQ_CITIES = "IRAQ_CITIES";
+  static const String SPECIALTIES = "SPECIALTIES";
+  static const String COUNT_APPOINTMENTS = "COUNT_APPOINTMENTS";
+
+  static const String IS_CHAT_OPENED = "IS_OPENED";
+  static const String SERVER_TOKEN_ID = "server_token_id";
+  static const String FCM_RECEIVE = "fcm_receive";
+  static const String LOG_IN_STATUS = "LOG_IN_STATUS";
+  static const String SWITCH_CHAT_FCM = "switch_chat_fcm";
+  static const String SWITCH_DISCUSSION_FCM = "switch_discussion_fcm";
+  static const String COUNT_REVIEW_DR_APPOINTMENTS =
+      "Count_Reveiw_Dr_Appointments";
+  static const String COUNT_DONE_DR_APPOINTMENTS = "Count_done_Dr_Appointments";
+  static const String MAIN_LIFE_CYCLE = "main_life_cycle";
+  static const String COUNT_ALL_APPOINTMENTS = "Count_All_Appointments";
+  static const String COUNT_ACCEPTED_DR_APPOINTMENTS =
+      "Count_Accepted_Dr_Appointments";
+  static const String COUNT_MSG = "count_msgs";
+  static const int ON_OPENED_CHAT = 564;
+  static const int ON_CLOSED_CHAT = 675;
+  static const int FROM_FCM = 55;
+  static const int FROM_HOME = 66;
+  static const String LOCAL_LANGUAGE = "local_language";
+  static const String IMG_URL = "img_url";
+}

@@ -4,8 +4,13 @@ import 'package:medic_book/routers/application.dart';
 import 'package:fluro/fluro.dart';
 import 'package:medic_book/helpers/constants.dart';
 import 'package:fluwx/fluwx.dart' as fluwx;
+import 'package:medic_book/stores/loginStore.dart';
+import 'package:provider/provider.dart';
 
 class Login extends StatefulWidget {
+  final bool secondEnter;
+
+  const Login({Key key,@required this.secondEnter}) : super(key: key);
   @override
   _LoginState createState() => _LoginState();
 }
@@ -13,6 +18,7 @@ class Login extends StatefulWidget {
 class _LoginState extends State<Login> {
   final TextEditingController _emailFilter = TextEditingController();
   final TextEditingController _passwordFilter = TextEditingController();
+  LoginStore loginStore;
 
   String _email = "";
   String _password = "";
@@ -26,6 +32,8 @@ class _LoginState extends State<Login> {
   void initState() {
     // TODO: implement initState
     super.initState();
+    loginStore = Provider.of<LoginStore>(this.context, listen: false);
+
     // Jump to the homepage during initialization, otherwise an error will be reported
     // Future(() {
     //   Navigator.of(context).pushAndRemoveUntil(
@@ -148,9 +156,38 @@ class _LoginState extends State<Login> {
                     style: TextStyle(
                         color: Color(AppColors.mainColor),
                         fontFamily: "Poppins-Bold")),
-              )
+              ),
+
             ],
-          )
+          ),
+          Container(
+            margin: EdgeInsets.only(bottom: 40.0,top: 40.0),
+            height: 48.0,
+            decoration: BoxDecoration(
+                color: Color(AppColors.mainColor),
+                borderRadius: BorderRadius.circular(4.0)),
+            child: Material(
+              color: Colors.transparent,
+              child: InkWell(
+                onTap: () {
+                  loginStore.setSecondEnter(true);
+                  // Prohibit jumping back to the previously registered route
+                  Navigator.of(context).pushAndRemoveUntil(
+                      new MaterialPageRoute(builder: (context) => Entrance()),
+                          (route) => route == null);
+                },
+                child: Center(
+                  child: Text("SKIP",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: "Poppins-Bold",
+                          fontSize: 18,
+                          letterSpacing: 1.0)),
+                ),
+              ),
+            ),
+          ),
+
         ]),
     );
   }

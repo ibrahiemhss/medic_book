@@ -3,9 +3,8 @@ import 'package:medic_book/api/my_http_request.dart';
 import 'package:dio/dio.dart';
 
 // Include generated file
-part 'registerStore.changeG.dart';
+part 'registerStore.g2.dart';
 
-// This is the class used by rest of your codebase
 class RegisterStore = _RegisterStore with _$RegisterStore;
 
 // The store-class

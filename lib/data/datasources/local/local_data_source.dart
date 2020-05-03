@@ -4,9 +4,13 @@ import 'dart:ui';
 import 'package:medic_book/data/database/database.dart';
 import 'package:medic_book/model/user.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:medic_book/helpers/constants.dart';
 
 abstract class LocalDataSource {
-  Future<bool> checkLogedIn();
+  bool checkLogedIn();
+  bool secondEnter();
+  void setSecondEnter(bool enter);
+
   Future<User> getUsetInfo(int id);
 }
 
@@ -16,11 +20,11 @@ class LocalDataSourceImpl implements LocalDataSource {
   LocalDataSourceImpl({this.sharedPreferences, this.appDatabase});
 
   @override
-  Future<bool> checkLogedIn() async {
+   checkLogedIn() async {
+    sharedPreferences.getBool(SharedPreferenceKeys.SIGNED_IN);
     try {
-      return await appDatabase.rememberMeDao.findAllRememberMe() == null
-          ? false
-          : true;
+      return sharedPreferences.getBool(SharedPreferenceKeys.SIGNED_IN)??false;
+
     } catch (e) {
       print("checkLogedIn exception =${e.toString()}");
     }
@@ -33,5 +37,23 @@ class LocalDataSourceImpl implements LocalDataSource {
     } catch (e) {
       print("getUsetInfo exception =${e.toString()}");
     }
+  }
+
+  @override
+  bool secondEnter() {
+    try {
+      print("LocalDataSource secondEnter value =${sharedPreferences.getBool(SharedPreferenceKeys.SECOND_ENTER).toString()}");
+
+      return sharedPreferences.getBool(SharedPreferenceKeys.SECOND_ENTER)??false;
+
+    } catch (e) {
+      print("checkLogedIn exception =${e.toString()}");
+    }
+  }
+
+  @override
+   setSecondEnter(bool enter) {
+    print("LocalDataSource SecondEnter prepared =${enter.toString()}");
+    sharedPreferences.setBool(SharedPreferenceKeys.SECOND_ENTER,enter);
   }
 }

@@ -26,7 +26,7 @@ class _EntranceState extends State<Entrance> {
   List _navBars;
   String _localVersion;
   HomeStore homeStore;
-
+  bool _second_enter=false;
   //Count, click the back button to exit the program
   int _lastClickTime = 0;
   final List<String> _svgAssetUrl = [MyAssets.iconHome, MyAssets.iconMyself];
@@ -34,7 +34,7 @@ class _EntranceState extends State<Entrance> {
   initState() {
     super.initState();
     homeStore = Provider.of<HomeStore>(this.context, listen: false);
-
+    Provider.of<HomeStore>(this.context, listen: false).checkIsSecondEnter();
     // 2 pages of the first screen
     _pages = <Widget>[FirstScreen(), Mine(), Login()];
     // Navigation Bar
@@ -72,35 +72,44 @@ class _EntranceState extends State<Entrance> {
     return Observer(
         builder: (_) {
       _activeIndex =  homeStore.pageIndex;
-      print("get changed page index =${homeStore.pageIndex}");
+      _second_enter=homeStore.secondEnter;
+      print("Entrance Observer \n"
+          "get second_enter =${homeStore.secondEnter}"
+          "\n"
+          "get changed page index =${homeStore.pageIndex}"
+          "");
 
-      return WillPopScope(
-            onWillPop: _doubleExit,
-            child: Scaffold(
-              appBar: PreferredSize(
-                preferredSize: Size.fromHeight(50.0),
-                child: _navBars[_activeIndex],
-              ),
-              body: IndexedStack(
-                index: _activeIndex,
-                children: _pages,
-              ),
-              bottomNavigationBar: CupertinoTabBar(
-                backgroundColor: Color(AppColors.themeColor),
-                items: <BottomNavigationBarItem>[
-                  BottomNavigationBarItem(icon: bottomIcon(0)),
-                  BottomNavigationBarItem(icon: bottomIcon(1)),
-                ],
-                currentIndex: _activeIndex,
-                onTap: (int index) {
-                //  setState(() {
-                  print("onClick page index =$index");
-                    homeStore.setPageIndex(index);
-                 // });
-                },
-              ),
+      if(!_second_enter){
+        return Scaffold(body:Login());
+      }else{
+        return WillPopScope(
+          onWillPop: _doubleExit,
+          child: Scaffold(
+            appBar: PreferredSize(
+              preferredSize: Size.fromHeight(50.0),
+              child: _navBars[_activeIndex],
             ),
-          );
+            body: IndexedStack(
+              index: _activeIndex,
+              children: _pages,
+            ),
+            bottomNavigationBar: CupertinoTabBar(
+              backgroundColor: Color(AppColors.themeColor),
+              items: <BottomNavigationBarItem>[
+                BottomNavigationBarItem(icon: bottomIcon(0)),
+                BottomNavigationBarItem(icon: bottomIcon(1)),
+              ],
+              currentIndex: _activeIndex,
+              onTap: (int index) {
+                print("onClick page index =$index");
+                homeStore.setPageIndex(index);
+
+              },
+            ),
+          ),
+        );
+      }
+
       },
     );
 

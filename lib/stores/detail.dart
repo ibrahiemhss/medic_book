@@ -7,7 +7,6 @@ import 'package:dio/dio.dart';
 // Include generated file
 part 'detail.changeG.dart';
 
-// This is the class used by rest of your codebase
 class DetailStore = _DetailStore with _$DetailStore;
 
 // The store-class

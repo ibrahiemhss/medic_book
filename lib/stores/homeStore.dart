@@ -8,7 +8,7 @@ import 'package:dio/dio.dart';
 import '../injection_container.dart';
 
 // Include generated file
-part 'homeStore.g.dart';
+part 'homeStore.g2.dart';
 
 class HomeStore = _HomeStore with _$HomeStore;
 
@@ -18,6 +18,8 @@ abstract class _HomeStore with Store {
 
   @observable
   bool logedIn = false;
+  @observable
+  bool secondEnter = false;
   @observable
   int pageIndex = 0;
 
@@ -34,10 +36,13 @@ abstract class _HomeStore with Store {
   }
   @action
   bool checkLogIn() {
-   logedIn =false;
-    //logedIn = await localDataSource.checkLogedIn();
+    logedIn=localDataSource.checkLogedIn();
   }
-
+  @action
+  bool checkIsSecondEnter() {
+    print("homeState secondInter =${localDataSource.secondEnter().toString()}");
+    secondEnter=localDataSource.secondEnter();
+  }
   @action
   Future getUserInfo(int id) async {
     user = await localDataSource.getUsetInfo(id);

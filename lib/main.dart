@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:medic_book/containers/Entrance.dart';
-import 'package:medic_book/helpers/constants.dart' show AppColors;
+import 'package:medic_book/helpers/constants.dart' show AppColors, SharedPreferenceKeys;
 import 'package:flutter/services.dart';
 import 'package:fluro/fluro.dart';
 import 'package:medic_book/routers/routers.dart';
@@ -11,12 +11,20 @@ import 'package:medic_book/stores/registerStore.dart';
 import 'package:medic_book/stores/loginStore.dart';
 import 'package:medic_book/stores/homeStore.dart';
 import 'package:medic_book/injection_container.dart' as di;
+import 'package:shared_preferences/shared_preferences.dart';
+
+import 'injection_container.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   //initialize get injection
   await di.init();
   // Modify the system status bar color
+
+  final SharedPreferences sharedPreferences=sl<SharedPreferences>();
+
+  print("in main sharedPreferences secondEnter value =${sharedPreferences.getBool(SharedPreferenceKeys.SECOND_ENTER).toString()}");
+
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
     systemNavigationBarColor:
         Color(AppColors.themeColor), // navigation bar color
