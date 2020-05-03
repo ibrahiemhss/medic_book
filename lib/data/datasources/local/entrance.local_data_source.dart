@@ -16,8 +16,10 @@ abstract class LocalDataSource {
 
 class LocalDataSourceImpl implements LocalDataSource {
  // final SharedPreferences sharedPreferences;
-  final AppDatabase appDatabase;
-  LocalDataSourceImpl({ this.appDatabase});
+  //final AppDatabase appDatabase;
+  LocalDataSourceImpl(
+    //  { this.appDatabase}
+      );
 
   @override
    checkLogedIn() async {
@@ -34,7 +36,9 @@ class LocalDataSourceImpl implements LocalDataSource {
   @override
   Future<User> getUsetInfo(int id) async {
     try {
-      return await appDatabase.userDao.findDataByValue(id);
+      return await null;
+
+   //   return await appDatabase.userDao.findDataByValue(id);
     } catch (e) {
       print("getUsetInfo exception =${e.toString()}");
     }

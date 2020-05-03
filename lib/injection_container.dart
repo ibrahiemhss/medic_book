@@ -22,9 +22,8 @@ Future<void> init() async {
   //sl.registerLazySingleton(() => sharedPreferences);
 
   //init tools
-  AppDatabase appDatabase =
-      await $FloorAppDatabase.databaseBuilder('medicBook.db').build();
-  sl.registerLazySingleton(() => appDatabase);
+  //AppDatabase appDatabase = await $FloorAppDatabase.databaseBuilder('medicBook.db').build();
+ // sl.registerLazySingleton(() => appDatabase);
   // Data sources
   sl.registerLazySingleton<RemoteDataSource>(
     () => RemoteDataSourceImpl(
@@ -36,6 +35,6 @@ Future<void> init() async {
   sl.registerLazySingleton<LocalDataSource>(
     () => LocalDataSourceImpl(
         //sharedPreferences: sl(),
-        appDatabase: sl()),
-  );
+       // appDatabase: sl()),
+  ));
 }

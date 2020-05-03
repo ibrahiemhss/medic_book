@@ -1,9 +1,9 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/FMDB" "${PODS_CONFIGURATION_BUILD_DIR}/shared_preferences_macos" "${PODS_CONFIGURATION_BUILD_DIR}/sqflite" "${PODS_CONFIGURATION_BUILD_DIR}/url_launcher_macos" "${PODS_ROOT}/../Flutter/ephemeral/.symlinks/flutter/darwin-x64"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/FMDB" "${PODS_CONFIGURATION_BUILD_DIR}/sqflite" "${PODS_CONFIGURATION_BUILD_DIR}/url_launcher_macos" "${PODS_ROOT}/../Flutter/ephemeral/.symlinks/flutter/darwin-x64"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/FMDB/FMDB.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/shared_preferences_macos/shared_preferences_macos.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/sqflite/sqflite.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/url_launcher_macos/url_launcher_macos.framework/Headers"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/FMDB/FMDB.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/sqflite/sqflite.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/url_launcher_macos/url_launcher_macos.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/../Frameworks' '@loader_path/Frameworks'
-OTHER_LDFLAGS = $(inherited) -l"sqlite3" -framework "FMDB" -framework "FlutterMacOS" -framework "shared_preferences_macos" -framework "sqflite" -framework "url_launcher_macos"
+OTHER_LDFLAGS = $(inherited) -l"sqlite3" -framework "FMDB" -framework "FlutterMacOS" -framework "sqflite" -framework "url_launcher_macos"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

@@ -1,3 +1,4 @@
+/*
 import 'dart:async';
 
 import 'package:floor/floor.dart';
@@ -36,3 +37,4 @@ abstract class AppDatabase extends FloorDatabase {
   RememberMeDao get rememberMeDao;
   UserDao get userDao;
 }
+*/

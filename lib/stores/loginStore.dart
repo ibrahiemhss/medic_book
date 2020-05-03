@@ -6,7 +6,7 @@ import 'package:dio/dio.dart';
 import '../injection_container.dart';
 
 // Include generated file
-part 'loginStore.g.dart';
+part 'loginStore.g2.dart';
 
 class LoginStore = _LoginStore with _$LoginStore;
 
