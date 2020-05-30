@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c6ce8f3-8386-4bb9-8927-4d6a0f436383" name="Default Changelist" comment="first">
+    <list default="true" id="0c6ce8f3-8386-4bb9-8927-4d6a0f436383" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/local.properties" afterDir="false" />
@@ -28,7 +27,6 @@
       <change beforePath="$PROJECT_DIR$/lib/data/database/database.g2.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/database/database.g.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/data/datasources/local/entrance.local_data_source.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/datasources/local/entrance.local_data_source.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/injection_container.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/injection_container.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/stores/loginStore.g2.dart" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
@@ -212,12 +210,20 @@
       <option name="project" value="LOCAL" />
       <updated>1588544575695</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update">
+      <created>1590847763900</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1590847763900</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
-    <option name="LAST_COMMIT_MESSAGE" value="first" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="696" y="142" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588560529342">
@@ -236,30 +242,30 @@
       <screen x="0" y="23" width="1280" height="729" />
     </state>
     <state x="407" y="103" key="Github.UntrackedFilesDialog/0.23.1280.729@0.23.1280.729" timestamp="1588367655321" />
-    <state width="1238" height="231" key="GridCell.Tab.0.bottom" timestamp="1590845774365">
+    <state width="1238" height="231" key="GridCell.Tab.0.bottom" timestamp="1590848342341">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
-    <state width="1238" height="231" key="GridCell.Tab.0.bottom/0.23.1280.729@0.23.1280.729" timestamp="1590845774365" />
-    <state width="1238" height="231" key="GridCell.Tab.0.center" timestamp="1590845774364">
+    <state width="1238" height="231" key="GridCell.Tab.0.bottom/0.23.1280.729@0.23.1280.729" timestamp="1590848342341" />
+    <state width="1238" height="231" key="GridCell.Tab.0.center" timestamp="1590848342340">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
-    <state width="1238" height="231" key="GridCell.Tab.0.center/0.23.1280.729@0.23.1280.729" timestamp="1590845774364" />
-    <state width="1238" height="231" key="GridCell.Tab.0.left" timestamp="1590845774362">
+    <state width="1238" height="231" key="GridCell.Tab.0.center/0.23.1280.729@0.23.1280.729" timestamp="1590848342340" />
+    <state width="1238" height="231" key="GridCell.Tab.0.left" timestamp="1590848342339">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
-    <state width="1238" height="231" key="GridCell.Tab.0.left/0.23.1280.729@0.23.1280.729" timestamp="1590845774362" />
-    <state width="1238" height="231" key="GridCell.Tab.0.right" timestamp="1590845774364">
+    <state width="1238" height="231" key="GridCell.Tab.0.left/0.23.1280.729@0.23.1280.729" timestamp="1590848342339" />
+    <state width="1238" height="231" key="GridCell.Tab.0.right" timestamp="1590848342340">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
-    <state width="1238" height="231" key="GridCell.Tab.0.right/0.23.1280.729@0.23.1280.729" timestamp="1590845774364" />
+    <state width="1238" height="231" key="GridCell.Tab.0.right/0.23.1280.729@0.23.1280.729" timestamp="1590848342340" />
     <state x="155" y="26" key="SettingsEditor" timestamp="1588292726201">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
     <state x="155" y="26" key="SettingsEditor/0.23.1280.729@0.23.1280.729" timestamp="1588292726201" />
-    <state x="240" y="129" key="Vcs.Push.Dialog.v2" timestamp="1588544578794">
+    <state x="240" y="129" key="Vcs.Push.Dialog.v2" timestamp="1590847797651">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
-    <state x="240" y="129" key="Vcs.Push.Dialog.v2/0.23.1280.729@0.23.1280.729" timestamp="1588544578794" />
+    <state x="240" y="129" key="Vcs.Push.Dialog.v2/0.23.1280.729@0.23.1280.729" timestamp="1590847797651" />
     <state x="100" y="123" width="1080" height="528" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1588290328770">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
