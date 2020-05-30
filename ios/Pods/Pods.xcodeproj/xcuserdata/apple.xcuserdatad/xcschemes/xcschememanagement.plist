@@ -54,6 +54,21 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>moor_ffi.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>path_provider.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>path_provider_macos.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>shared_preferences.xcscheme</key>
 		<dict>
 			<key>isShown</key>

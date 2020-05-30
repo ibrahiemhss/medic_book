@@ -1,4 +1,4 @@
-/*
+
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
 part of 'database.dart';
@@ -967,4 +967,4 @@ class _$UserDao extends UserDao {
     await _userUpdateAdapter.update(user, sqflite.ConflictAlgorithm.abort);
   }
 }
-*/
+

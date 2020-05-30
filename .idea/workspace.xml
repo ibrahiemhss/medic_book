@@ -1,38 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c6ce8f3-8386-4bb9-8927-4d6a0f436383" name="Default Changelist" comment="">
+    <list default="true" id="0c6ce8f3-8386-4bb9-8927-4d6a0f436383" name="Default Changelist" comment="first">
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/.symlinks/plugins/shared_preferences" beforeDir="false" afterPath="$PROJECT_DIR$/ios/.symlinks/plugins/shared_preferences" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/.symlinks/plugins/shared_preferences_macos" beforeDir="false" afterPath="$PROJECT_DIR$/ios/.symlinks/plugins/shared_preferences_macos" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/.symlinks/plugins/shared_preferences_web" beforeDir="false" afterPath="$PROJECT_DIR$/ios/.symlinks/plugins/shared_preferences_web" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/apple.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/apple.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-acknowledgements.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-acknowledgements.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-acknowledgements.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-acknowledgements.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/GeneratedPluginRegistrant.m" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/GeneratedPluginRegistrant.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/containers/Entrance.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/containers/Entrance.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/data/database/database.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/database/database.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/database/database.g2.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/database/database.g2.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/database/database.g2.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/database/database.g.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/data/datasources/local/entrance.local_data_source.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/datasources/local/entrance.local_data_source.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/injection_container.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/injection_container.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/stores/loginStore.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/stores/loginStore.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/stores/loginStore.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/stores/loginStore.g2.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/macos/Podfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/macos/Pods/Pods.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Pods/Pods.xcodeproj/xcuserdata/apple.xcuserdatad/xcschemes/shared_preferences.xcscheme" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Pods/Pods.xcodeproj/xcuserdata/apple.xcuserdatad/xcschemes/shared_preferences_macos.xcscheme" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Pods/Pods.xcodeproj/xcuserdata/apple.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/macos/Pods/Pods.xcodeproj/xcuserdata/apple.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Pods/Target Support Files/Pods-Runner/Pods-Runner-acknowledgements.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/macos/Pods/Target Support Files/Pods-Runner/Pods-Runner-acknowledgements.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Pods/Target Support Files/Pods-Runner/Pods-Runner-acknowledgements.plist" beforeDir="false" afterPath="$PROJECT_DIR$/macos/Pods/Target Support Files/Pods-Runner/Pods-Runner-acknowledgements.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Pods/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh" beforeDir="false" afterPath="$PROJECT_DIR$/macos/Pods/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Pods/Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/macos/Pods/Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Pods/Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/macos/Pods/Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Pods/Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/macos/Pods/Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Pods/Target Support Files/shared_preferences/shared_preferences.debug.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Pods/Target Support Files/shared_preferences/shared_preferences.release.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Pods/Target Support Files/shared_preferences_macos/shared_preferences_macos-Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Pods/Target Support Files/shared_preferences_macos/shared_preferences_macos-dummy.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Pods/Target Support Files/shared_preferences_macos/shared_preferences_macos-prefix.pch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Pods/Target Support Files/shared_preferences_macos/shared_preferences_macos-umbrella.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Pods/Target Support Files/shared_preferences_macos/shared_preferences_macos.debug.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Pods/Target Support Files/shared_preferences_macos/shared_preferences_macos.modulemap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Pods/Target Support Files/shared_preferences_macos/shared_preferences_macos.release.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/stores/loginStore.g2.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +59,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/moor_model" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -69,19 +67,19 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/assets/images" />
-      <recent name="$PROJECT_DIR$/lib/widgets/NavBar" />
-      <recent name="$PROJECT_DIR$/lib/containers" />
-      <recent name="$PROJECT_DIR$/lib/stores" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/data/moor_database" />
       <recent name="$PROJECT_DIR$/lib/models" />
       <recent name="$PROJECT_DIR$/lib/helpers" />
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/lib/core/http" />
-      <recent name="$PROJECT_DIR$/lib/data/datasources/remote" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/moor_model" />
+      <recent name="$PROJECT_DIR$/lib/data/database" />
+      <recent name="$PROJECT_DIR$/assets/images" />
+      <recent name="$PROJECT_DIR$/lib/widgets/NavBar" />
+      <recent name="$PROJECT_DIR$/lib/containers" />
     </key>
   </component>
   <component name="RunManager" selected="Flutter.main.dart">
@@ -207,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588537271420</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="first">
+      <created>1588544575695</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1588544575695</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -215,14 +220,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="first" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="696" y="142" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588462040727">
+    <state x="696" y="142" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588560529342">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
-    <state x="696" y="142" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.729@0.23.1280.729" timestamp="1588462040727" />
-    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1588537271030">
+    <state x="696" y="142" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.729@0.23.1280.729" timestamp="1588560529342" />
+    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1590847756536">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
-    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.729@0.23.1280.729" timestamp="1588537271030" />
+    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.729@0.23.1280.729" timestamp="1590847756536" />
     <state x="501" y="293" key="Github.ShareDialog" timestamp="1588367640087">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
@@ -231,30 +236,30 @@
       <screen x="0" y="23" width="1280" height="729" />
     </state>
     <state x="407" y="103" key="Github.UntrackedFilesDialog/0.23.1280.729@0.23.1280.729" timestamp="1588367655321" />
-    <state width="1238" height="224" key="GridCell.Tab.0.bottom" timestamp="1588537890450">
+    <state width="1238" height="231" key="GridCell.Tab.0.bottom" timestamp="1590845774365">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
-    <state width="1238" height="224" key="GridCell.Tab.0.bottom/0.23.1280.729@0.23.1280.729" timestamp="1588537890450" />
-    <state width="1238" height="224" key="GridCell.Tab.0.center" timestamp="1588537890450">
+    <state width="1238" height="231" key="GridCell.Tab.0.bottom/0.23.1280.729@0.23.1280.729" timestamp="1590845774365" />
+    <state width="1238" height="231" key="GridCell.Tab.0.center" timestamp="1590845774364">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
-    <state width="1238" height="224" key="GridCell.Tab.0.center/0.23.1280.729@0.23.1280.729" timestamp="1588537890450" />
-    <state width="1238" height="224" key="GridCell.Tab.0.left" timestamp="1588537890449">
+    <state width="1238" height="231" key="GridCell.Tab.0.center/0.23.1280.729@0.23.1280.729" timestamp="1590845774364" />
+    <state width="1238" height="231" key="GridCell.Tab.0.left" timestamp="1590845774362">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
-    <state width="1238" height="224" key="GridCell.Tab.0.left/0.23.1280.729@0.23.1280.729" timestamp="1588537890449" />
-    <state width="1238" height="224" key="GridCell.Tab.0.right" timestamp="1588537890450">
+    <state width="1238" height="231" key="GridCell.Tab.0.left/0.23.1280.729@0.23.1280.729" timestamp="1590845774362" />
+    <state width="1238" height="231" key="GridCell.Tab.0.right" timestamp="1590845774364">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
-    <state width="1238" height="224" key="GridCell.Tab.0.right/0.23.1280.729@0.23.1280.729" timestamp="1588537890450" />
+    <state width="1238" height="231" key="GridCell.Tab.0.right/0.23.1280.729@0.23.1280.729" timestamp="1590845774364" />
     <state x="155" y="26" key="SettingsEditor" timestamp="1588292726201">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
     <state x="155" y="26" key="SettingsEditor/0.23.1280.729@0.23.1280.729" timestamp="1588292726201" />
-    <state x="240" y="129" key="Vcs.Push.Dialog.v2" timestamp="1588537277573">
+    <state x="240" y="129" key="Vcs.Push.Dialog.v2" timestamp="1588544578794">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
-    <state x="240" y="129" key="Vcs.Push.Dialog.v2/0.23.1280.729@0.23.1280.729" timestamp="1588537277573" />
+    <state x="240" y="129" key="Vcs.Push.Dialog.v2/0.23.1280.729@0.23.1280.729" timestamp="1588544578794" />
     <state x="100" y="123" width="1080" height="528" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1588290328770">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
@@ -269,22 +274,22 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/lib/data/datasources/local/entrance.local_data_source.dart</url>
-          <line>17</line>
+          <line>16</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/lib/data/datasources/local/entrance.local_data_source.dart</url>
-          <line>40</line>
+          <line>37</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/lib/data/datasources/local/entrance.local_data_source.dart</url>
-          <line>31</line>
+          <line>28</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/lib/data/datasources/local/entrance.local_data_source.dart</url>
-          <line>28</line>
+          <line>25</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">

@@ -2,6 +2,7 @@ import 'package:data_connection_checker/data_connection_checker.dart';
 import 'package:dio/dio.dart' as dio;
 import 'package:flutter/services.dart';
 import 'package:get_it/get_it.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 //import 'package:shared_preferences/shared_preferences.dart';
 
 import 'api/my_http_request.dart';
@@ -18,11 +19,11 @@ Future<void> init() async {
   sl.registerLazySingleton<NetworkInfo>(() => NetworkInfoImpl(sl()));
   sl.registerLazySingleton<MyHttpRequest>(() => MyHttpRequest());
 
- // final sharedPreferences = await SharedPreferences.getInstance();
-  //sl.registerLazySingleton(() => sharedPreferences);
+  final sharedPreferences = await SharedPreferences.getInstance();
+  sl.registerLazySingleton(() => sharedPreferences);
 
   //init tools
-  //AppDatabase appDatabase = await $FloorAppDatabase.databaseBuilder('medicBook.db').build();
+  AppDatabase appDatabase = await $FloorAppDatabase.databaseBuilder('medicBook.db').build();
  // sl.registerLazySingleton(() => appDatabase);
   // Data sources
   sl.registerLazySingleton<RemoteDataSource>(
@@ -34,7 +35,8 @@ Future<void> init() async {
   );
   sl.registerLazySingleton<LocalDataSource>(
     () => LocalDataSourceImpl(
-        //sharedPreferences: sl(),
-       // appDatabase: sl()),
-  ));
+      sharedPreferences:sl(),
+        appDatabase:sl()
+    ),
+  );
 }

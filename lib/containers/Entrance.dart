@@ -80,7 +80,7 @@ class _EntranceState extends State<Entrance> {
     return Observer(
         builder: (_) {
       _activeIndex =  homeStore.pageIndex;
-      _second_enter=homeStore.secondEnter;
+     // _second_enter=homeStore.secondEnter;
       print("Entrance Observer \n"
           "get second_enter =${homeStore.secondEnter}"
           "\n"

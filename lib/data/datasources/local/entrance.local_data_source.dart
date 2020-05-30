@@ -3,23 +3,20 @@ import 'dart:ui';
 
 import 'package:medic_book/data/database/database.dart';
 import 'package:medic_book/model/user.dart';
-//import 'package:shared_preferences/shared_preferences.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:medic_book/helpers/constants.dart';
 
 abstract class LocalDataSource {
   bool checkLogedIn();
   bool secondEnter();
   void setSecondEnter(bool enter);
-
   Future<User> getUsetInfo(int id);
 }
 
 class LocalDataSourceImpl implements LocalDataSource {
- // final SharedPreferences sharedPreferences;
-  //final AppDatabase appDatabase;
-  LocalDataSourceImpl(
-    //  { this.appDatabase}
-      );
+  final SharedPreferences sharedPreferences;
+  final AppDatabase appDatabase;
+  LocalDataSourceImpl({this.sharedPreferences, this.appDatabase});
 
   @override
    checkLogedIn() async {
