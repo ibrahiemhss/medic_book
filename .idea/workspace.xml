@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c6ce8f3-8386-4bb9-8927-4d6a0f436383" name="Default Changelist" comment="" />
+    <list default="true" id="0c6ce8f3-8386-4bb9-8927-4d6a0f436383" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -195,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590848405895</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="update">
+      <created>1590852248511</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1590852248511</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -208,10 +217,10 @@
       <screen x="0" y="23" width="1280" height="729" />
     </state>
     <state x="696" y="142" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.729@0.23.1280.729" timestamp="1588560529342" />
-    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1590848404629">
+    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1590852248144">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
-    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.729@0.23.1280.729" timestamp="1590848404629" />
+    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.729@0.23.1280.729" timestamp="1590852248144" />
     <state x="501" y="293" key="Github.ShareDialog" timestamp="1588367640087">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
@@ -240,10 +249,10 @@
       <screen x="0" y="23" width="1280" height="729" />
     </state>
     <state x="155" y="26" key="SettingsEditor/0.23.1280.729@0.23.1280.729" timestamp="1588292726201" />
-    <state x="240" y="129" key="Vcs.Push.Dialog.v2" timestamp="1590848430639">
+    <state x="240" y="129" key="Vcs.Push.Dialog.v2" timestamp="1590854388420">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
-    <state x="240" y="129" key="Vcs.Push.Dialog.v2/0.23.1280.729@0.23.1280.729" timestamp="1590848430639" />
+    <state x="240" y="129" key="Vcs.Push.Dialog.v2/0.23.1280.729@0.23.1280.729" timestamp="1590854388420" />
     <state x="100" y="123" width="1080" height="528" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1588290328770">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
